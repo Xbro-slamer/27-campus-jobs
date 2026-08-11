@@ -7,490 +7,357 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;background:#f5f7fa;color:#1a1a2e;line-height:1.6}
-.container{max-width:1400px;margin:0 auto;padding:0 16px}
-.header{background:#fff;border-bottom:1px solid #e2e8f0;padding:12px 0;position:sticky;top:0;z-index:100}
-.header .c{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.header h1{font-size:1.1rem}
-.header .ver{font-size:.7rem;color:#999;margin-left:8px}
-.stats{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}
-.stats .s{flex:1;min-width:90px;background:#fff;border-radius:8px;padding:10px 14px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.stats .s .n{font-size:1.4rem;font-weight:700}
-.stats .s .l{font-size:.7rem;color:#888}
-.fbar{background:#fff;border-radius:8px;padding:12px 16px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.fbar input[type=text]{flex:1;min-width:160px;padding:7px 12px;border:1px solid #e2e8f0;border-radius:20px;font-size:.82rem}
-.fbar select{padding:6px 10px;border:1px solid #e2e8f0;border-radius:20px;font-size:.78rem;background:#fff}
-.fbar button{padding:6px 14px;border:1px solid #e2e8f0;border-radius:20px;font-size:.78rem;background:#fff;cursor:pointer;white-space:nowrap}
-.fbar button:hover{border-color:#4f46e5;color:#4f46e5}
-.fbar button.on{background:#4f46e5;color:#fff;border-color:#4f46e5}
-.tag-row{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-bottom:4px}
-.tag-row .lbl{font-size:.75rem;font-weight:600;color:#888;white-space:nowrap;min-width:44px}
-.tag{font-size:.73rem;padding:3px 10px;border:1px solid #e2e8f0;border-radius:14px;cursor:pointer;background:#fff;white-space:nowrap}
-.tag:hover{border-color:#4f46e5;color:#4f46e5}
+.c{max-width:1400px;margin:0 auto;padding:0 16px}
+.hd{background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 0;position:sticky;top:0;z-index:100}
+.hd .c{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.hd h1{font-size:1.1rem}.hd .ver{font-size:.7rem;color:#999;margin-left:6px}
+.st{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}
+.st .s{flex:1;min-width:80px;background:#fff;padding:8px 12px;text-align:center;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.st .n{font-size:1.3rem;font-weight:700}.st .l{font-size:.7rem;color:#888}
+.bar{background:#fff;border-radius:8px;padding:10px 14px;margin-bottom:8px;box-shadow:0 1px 3px rgba(0,0,0,.05);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.bar input[type=text]{flex:1;min-width:140px;padding:6px 10px;border:1px solid #e2e8f0;border-radius:20px;font-size:.8rem}
+.bar select,.bar button{padding:5px 10px;border:1px solid #e2e8f0;border-radius:20px;font-size:.78rem;background:#fff;cursor:pointer}
+.bar button.on{background:#4f46e5;color:#fff;border-color:#4f46e5}
+.tags{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin-bottom:4px}
+.tags .lbl{font-size:.73rem;font-weight:600;color:#888;min-width:40px}
+.tag{padding:2px 8px;border:1px solid #e2e8f0;border-radius:12px;font-size:.72rem;cursor:pointer;background:#fff}
 .tag.on{background:#4f46e5;color:#fff;border-color:#4f46e5}
-.info{font-size:.78rem;color:#888;margin:8px 0;display:flex;justify-content:space-between}
-.tbl{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.tbl table{width:100%;border-collapse:collapse;font-size:.82rem}
-.tbl th{background:#eef2ff;padding:8px 10px;text-align:left;font-size:.75rem;color:#666;cursor:pointer}
-.tbl td{padding:7px 10px;border-bottom:1px solid #f0f0f0}
+.info{font-size:.75rem;color:#888;margin:6px 0;display:flex;justify-content:space-between}
+.tbl{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.tbl table{width:100%;border-collapse:collapse;font-size:.8rem}
+.tbl th{background:#eef2ff;padding:7px 8px;text-align:left;font-size:.73rem;color:#666}
+.tbl td{padding:6px 8px;border-bottom:1px solid #f0f0f0}
 .tbl tr:hover td{background:#f8faff}
-.row-soon{background:#fffbeb}
-.row-ended{background:#fef2f2;opacity:.55}
-.dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
+.r-soon{background:#fffbeb}.r-end{background:#fef2f2;opacity:.5}
+.dot{display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:3px}
 .dot.g{background:#10b981}.dot.y{background:#f59e0b}.dot.r{background:#ef4444}
-.btn-sm{padding:3px 12px;border-radius:14px;font-size:.73rem;font-weight:600;border:none;cursor:pointer;text-decoration:none}
-.btn-go{background:#4f46e5;color:#fff}
-.btn-go:hover{opacity:.85}
-.btn-fav{background:none;border:none;cursor:pointer;font-size:1rem}
-.admin-bar{display:none;background:#fffbe6;border:2px solid #f59e0b;border-radius:8px;padding:14px 18px;margin-bottom:10px}
-.admin-bar h3{font-size:.95rem;margin-bottom:8px}
-.admin-bar .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
-.admin-bar input,.admin-bar select{padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:.8rem}
-.admin-bar .up-zone{border:2px dashed #e2e8f0;border-radius:8px;padding:24px;text-align:center;cursor:pointer;margin:8px 0}
-.admin-bar .up-zone:hover{border-color:#4f46e5;background:#f8f8ff}
-.footer{text-align:center;padding:16px;font-size:.7rem;color:#999;margin-top:16px;border-top:1px solid #e2e8f0}
+.btn{padding:3px 10px;border-radius:14px;font-size:.72rem;font-weight:600;border:none;cursor:pointer;text-decoration:none}
+.btn-go{background:#4f46e5;color:#fff}.btn-star{background:none;border:none;cursor:pointer;font-size:.95rem}
+.adm{display:none;background:#fffbe6;border:2px solid #f59e0b;border-radius:8px;padding:12px 16px;margin-bottom:8px}
+.adm h3{font-size:.9rem;margin-bottom:8px}
+.adm .up{border:2px dashed #e2e8f0;border-radius:8px;padding:20px;text-align:center;cursor:pointer;margin:8px 0}
+.adm .up:hover{border-color:#4f46e5;background:#f8f8ff}
+.ft{text-align:center;padding:14px;font-size:.7rem;color:#999;margin-top:14px;border-top:1px solid #e2e8f0}
 .empty{text-align:center;padding:60px;color:#999}
-.toast{position:fixed;bottom:20px;right:20px;background:#1e293b;color:#fff;padding:10px 18px;border-radius:8px;font-size:.82rem;z-index:9999}
-.card-grid{display:none;gap:10px;margin-top:10px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
-.card{background:#fff;border-radius:8px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.card .ch{display:flex;justify-content:space-between;margin-bottom:6px}
-.card .cname{font-weight:700}
-.card .ctitle{font-size:.85rem;margin-bottom:6px}
-.card .cmeta{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px}
-.card .cmeta span{font-size:.72rem;padding:2px 8px;background:#f5f7fa;border-radius:10px;color:#888}
-.card .cf{display:flex;justify-content:space-between;align-items:center;padding-top:8px;border-top:1px solid #f0f0f0}
-@media(max-width:768px){.card-grid{grid-template-columns:1fr}}
+.toast{position:fixed;bottom:20px;right:20px;background:#1e293b;color:#fff;padding:8px 16px;border-radius:8px;font-size:.8rem;z-index:9999}
+.cards{display:none;gap:10px;margin-top:8px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.crd{background:#fff;border-radius:8px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.crd .ch{display:flex;justify-content:space-between;margin-bottom:4px}
+.crd .cn{font-weight:700}.crd .ct{font-size:.82rem;margin-bottom:4px}
+.crd .cm{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:4px}
+.crd .cm span{font-size:.7rem;padding:2px 7px;background:#f5f7fa;border-radius:8px;color:#888}
+.crd .cf{display:flex;justify-content:space-between;align-items:center;padding-top:6px;border-top:1px solid #f0f0f0}
+#loading{text-align:center;padding:100px 20px;color:#888}
+@media(max-width:768px){.cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v4.7</span></h1></div>
-    <div style="display:flex;gap:6px;align-items:center">
-      <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
-      <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
-    </div>
+<div class="hd"><div class="c">
+  <div><h1>🎓 27届校招岗位汇总<span class="ver">v5.0</span></h1></div>
+  <div style="display:flex;gap:6px">
+    <button onclick="toggleView()" id="vBtn" style="padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer;font-size:.78rem">🃏</button>
+    <button onclick="toggleAdmin()" style="padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer;font-size:.78rem">⚙️</button>
   </div>
-</div>
+</div></div>
 
-<div class="container">
-  <div class="stats" id="stats"></div>
+<div class="c">
+  <div id="loading">⏳ 加载数据中...</div>
+  
+  <div id="app" style="display:none">
+    <div class="st" id="stats"></div>
 
-  <!-- ADMIN PANEL -->
-  <div class="admin-bar" id="adminBar">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-      <h3>⚙️ 后台管理</h3>
-      <div style="display:flex;gap:6px">
-        <button onclick="showAddForm()" style="background:#4f46e5;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">➕ 新增岗位</button>
-        <button onclick="batchUpdateDead()" style="background:#f59e0b;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">🔄 刷新状态</button>
-        <button onclick="dedupData()" style="background:#ef4444;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">🧹 去重</button>
-        <button onclick="resetData()" style="background:#999;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">↩ 恢复默认</button>
-        <button onclick="exportJSON()" style="background:#10b981;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">💾 导出数据</button>
-        <button onclick="toggleAdmin()" style="border:none;background:none;cursor:pointer;font-size:1.2rem">✕</button>
+    <div class="adm" id="adm">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <h3>⚙️ 管理</h3>
+        <div style="display:flex;gap:5px">
+          <button onclick="addJob()" style="background:#4f46e5;color:#fff;border:none;padding:5px 12px;border-radius:20px;cursor:pointer;font-size:.75rem">+ 新增</button>
+          <button onclick="dedup()" style="background:#ef4444;color:#fff;border:none;padding:5px 12px;border-radius:20px;cursor:pointer;font-size:.75rem">🧹 去重</button>
+          <button onclick="resetData()" style="background:#999;color:#fff;border:none;padding:5px 12px;border-radius:20px;cursor:pointer;font-size:.75rem">↩</button>
+          <button onclick="toggleAdmin()" style="border:none;background:none;cursor:pointer;font-size:1.1rem">✕</button>
+        </div>
       </div>
+      <div><strong>📥 导入：</strong>
+        <button onclick="document.getElementById('fi').click()" style="background:#4f46e5;color:#fff;border:none;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:.78rem;margin-left:4px">📁 CSV/JSON</button>
+        <span style="font-size:.73rem;color:#888;margin-left:6px">Excel请另存为CSV</span>
+      </div>
+      <div class="up" id="dz">
+        <div style="font-size:1.8rem">📁</div><p>拖拽文件</p>
+        <input type="file" id="fi" accept=".csv,.json,.js" style="display:none" onchange="handleFile(this.files[0])">
+      </div>
+      <div id="im" style="font-size:.75rem;color:#10b981;margin-top:4px"></div>
     </div>
-    <div style="margin-bottom:6px"><strong>📥 导入岗位：</strong>
-      <button onclick="document.getElementById('fileInput').click()" style="background:#4f46e5;color:#fff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;font-size:.82rem;margin-left:4px">📁 导入 CSV</button>
-      <span style="font-size:.73rem;color:#888;margin-left:6px">Excel请先另存为CSV再导入 | 支持拖拽</span>
+
+    <div class="bar">
+      <input type="text" id="srch" placeholder="🔍 搜索...">
+      <select id="srt"><option value="deadline">⏰ 截止升序</option><option value="-deadline">截止降序</option><option value="company">公司</option></select>
+      <button onclick="toggleFav()" id="fb">⭐</button>
+      <button onclick="exportCSV()">📥</button>
+      <button onclick="resetFilters()">🔄</button>
     </div>
-    <div class="up-zone" id="dropZone">
-      <div style="font-size:2rem">📁</div>
-      <p>拖拽 Excel 文件到这里，或点击选择文件</p>
-      <input type="file" id="fileInput" accept=".csv,.json,.js" style="display:none" onchange="handleFile(this.files[0])">
-    </div>
-    <div id="importMsg" style="font-size:.78rem;color:#10b981;margin-top:4px"></div>
-    <div style="margin-top:10px"><strong>📋 岗位管理：</strong>（下方表格每行有编辑/删除按钮）</div>
+    <div class="tags"><span class="lbl">类别：</span><span id="ctags"></span></div>
+    <div class="tags"><span class="lbl">城市：</span><span id="xtags"></span></div>
+    <div class="tags"><span class="lbl">状态：</span><span id="ztags"></span></div>
+
+    <div class="info"><span id="ri">0条</span></div>
+
+    <div class="tbl" id="tv"><table><thead><tr><th>⭐</th><th>公司</th><th>岗位</th><th>类别</th><th>城市</th><th>学历</th><th>截止</th><th>状态</th><th>操作</th></tr></thead><tbody id="tb"></tbody></table></div>
+    <div class="cards" id="cv"></div>
+    <div class="empty" id="em" style="display:none">🔍 没有匹配的岗位</div>
   </div>
-
-  <!-- FILTERS -->
-  <div class="fbar">
-    <input type="text" id="search" placeholder="🔍 搜索公司/岗位...">
-    <select id="sortBy"><option value="deadline">⏰ 截止升序</option><option value="-deadline">截止降序</option><option value="company">公司 A-Z</option></select>
-    <button onclick="toggleFav()" id="favBtn">⭐ 收藏</button>
-    <button onclick="doExport()">📥 导出</button>
-    <button onclick="resetAll()">🔄 重置</button>
-  </div>
-  <div class="tag-row"><span class="lbl">类别：</span><span id="catTags"></span></div>
-  <div class="tag-row"><span class="lbl">城市：</span><span id="cityTags"></span></div>
-  <div class="tag-row"><span class="lbl">状态：</span><span id="statusTags"></span></div>
-
-  <div class="info"><span id="resultInfo">共 0 条</span></div>
-
-  <!-- TABLE -->
-  <div class="tbl" id="tableView"><table><thead><tr>
-    <th>⭐</th><th>公司</th><th>岗位</th><th>类别</th><th>城市</th><th>学历</th><th onclick="setSort('deadline')">截止 ▾</th><th>状态</th><th>操作</th>
-  </tr></thead><tbody id="tbody"></tbody></table></div>
-
-  <!-- CARDS -->
-  <div class="card-grid" id="cardView"></div>
-  <div class="empty" id="empty" style="display:none">🔍 没有匹配的岗位</div>
 </div>
 
-<div class="footer">数据来源各企业官网 | 仅供参考 | v4.4 | <a href="#" onclick="resetData()" style="color:#999">重置数据</a></div>
+<div class="ft">数据来源各企业官网 | v5.0 | <a href="#" onclick="resetData()" style="color:#999">重置数据</a></div>
 
-<!-- ADD/EDIT FORM MODAL -->
-<div id="formModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;align-items:center;justify-content:center;padding:20px">
-  <div style="background:#fff;border-radius:10px;padding:20px;max-width:500px;width:100%;max-height:90vh;overflow:auto">
-    <h3 id="formTitle">新增岗位</h3>
-    <div style="margin:8px 0"><label style="font-size:.8rem;font-weight:600">公司 *</label><input id="fCompany" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px"></div>
-    <div style="margin:8px 0"><label style="font-size:.8rem;font-weight:600">岗位 *</label><input id="fTitle" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px"></div>
-    <div style="display:flex;gap:8px">
-      <div style="flex:1;margin:8px 0"><label style="font-size:.8rem;font-weight:600">类别</label><input id="fCat" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px" placeholder="算法"></div>
-      <div style="flex:1;margin:8px 0"><label style="font-size:.8rem;font-weight:600">城市</label><input id="fCity" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px" placeholder="北京"></div>
+<!-- Form Modal -->
+<div id="fm" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;align-items:center;justify-content:center;padding:16px">
+  <div style="background:#fff;border-radius:10px;padding:18px;max-width:480px;width:100%;max-height:90vh;overflow:auto">
+    <h3 id="fti">新增岗位</h3>
+    <div style="margin:6px 0"><label style="font-size:.78rem;font-weight:600">公司 *</label><input id="fc" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px"></div>
+    <div style="margin:6px 0"><label style="font-size:.78rem;font-weight:600">岗位 *</label><input id="ft" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px"></div>
+    <div style="display:flex;gap:6px">
+      <div style="flex:1;margin:6px 0"><label style="font-size:.78rem;font-weight:600">类别</label><input id="fg" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px" placeholder="算法"></div>
+      <div style="flex:1;margin:6px 0"><label style="font-size:.78rem;font-weight:600">城市</label><input id="fx" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px" placeholder="北京"></div>
     </div>
-    <div style="display:flex;gap:8px">
-      <div style="flex:1;margin:8px 0"><label style="font-size:.8rem;font-weight:600">学历</label><select id="fEdu" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px"><option>本科及以上</option><option>硕士及以上</option><option>博士</option><option>不限</option></select></div>
-      <div style="flex:1;margin:8px 0"><label style="font-size:.8rem;font-weight:600">截止时间</label><input type="date" id="fDeadline" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px"></div>
+    <div style="display:flex;gap:6px">
+      <div style="flex:1;margin:6px 0"><label style="font-size:.78rem;font-weight:600">学历</label><select id="fe" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px"><option>本科及以上</option><option>硕士及以上</option><option>博士</option><option>不限</option></select></div>
+      <div style="flex:1;margin:6px 0"><label style="font-size:.78rem;font-weight:600">截止</label><input type="date" id="fd" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px"></div>
     </div>
-    <div style="margin:8px 0"><label style="font-size:.8rem;font-weight:600">投递链接 *</label><input id="fLink" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px" placeholder="https://"></div>
-    <div style="margin:8px 0"><label style="font-size:.8rem;font-weight:600">内推码</label><input id="fRef" style="width:100%;padding:6px 10px;border:1px solid #e2e8f0;border-radius:6px;font-size:.85rem;margin-top:2px"></div>
-    <input type="hidden" id="fIndex" value="-1">
-    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
-      <button onclick="closeForm()" style="padding:7px 16px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;cursor:pointer;font-size:.82rem">取消</button>
-      <button onclick="saveJob()" style="padding:7px 16px;background:#4f46e5;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:.82rem">保存</button>
+    <div style="margin:6px 0"><label style="font-size:.78rem;font-weight:600">链接</label><input id="fl" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px" placeholder="https://"></div>
+    <div style="margin:6px 0"><label style="font-size:.78rem;font-weight:600">内推码</label><input id="fr" style="width:100%;padding:6px 8px;border:1px solid #e2e8f0;border-radius:6px;font-size:.82rem;margin-top:2px"></div>
+    <input type="hidden" id="fi2" value="-1">
+    <div style="display:flex;gap:6px;justify-content:flex-end;margin-top:10px">
+      <button onclick="closeForm()" style="padding:6px 14px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;cursor:pointer;font-size:.8rem">取消</button>
+      <button onclick="saveJob()" style="padding:6px 14px;background:#4f46e5;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:.8rem">保存</button>
     </div>
   </div>
 </div>
 
-<script src="jobs-data.js"></script>
 <script>
-// ===== DATA =====
-var DATA = JSON.parse(JSON.stringify(JOBS_DATA));
-// Add defaults for missing fields
-DATA.forEach(function(j){
-  j.category=normCat(j.category||'');
-  if(!j.education)j.education='本科及以上';
-  if(!j.salary)j.salary='详见岗位描述';
-  if(!j.status)j.status='可投';
-  if(!j.updateTime)j.updateTime='2026-08-11';
-});
-
-// Load saved data from localStorage
-(function(){
-  try{
-    var saved=localStorage.getItem('campus_data');
-    if(saved){var arr=JSON.parse(saved);if(arr.length>0)DATA=arr;}
-  }catch(e){}
-})();
-function saveData(){
-  try{localStorage.setItem('campus_data',JSON.stringify(DATA));}catch(e){}
-}
-var FILTERS = {search:'',cats:new Set(),cities:new Set(),status:new Set(),sort:'deadline',favs:new Set(),favOnly:false,view:'table',admin:false};
-try{var s=JSON.parse(localStorage.campus_v3||'{}');if(s.favs)FILTERS.favs=new Set(s.favs);if(s.favOnly)FILTERS.favOnly=s.favOnly;if(s.view)FILTERS.view=s.view;}catch(e){}
-function save(){var o={favs:[...FILTERS.favs],favOnly:FILTERS.favOnly,view:FILTERS.view};localStorage.campus_v3=JSON.stringify(o);}
+// ===== GLOBAL STATE =====
+var DATA=[],F={search:'',cats:new Set,cities:new Set,status:new Set,sort:'deadline',favs:new Set,favOnly:false,view:'table',admin:false};
+try{var s=JSON.parse(localStorage.campus||'{}');if(s.favs)F.favs=new Set(s.favs);F.favOnly=!!s.favOnly;F.view=s.view||'table';}catch(e){}
+function sv(){localStorage.campus=JSON.stringify({favs:[...F.favs],favOnly:F.favOnly,view:F.view});}
+function svd(){try{localStorage.campus_data=JSON.stringify(DATA);}catch(e){}}
 
 // ===== HELPERS =====
-function daysLeft(j){var n=new Date;n.setHours(0,0,0,0);var d=new Date(j.deadline);d.setHours(0,0,0,0);return Math.ceil((d-n)/86400000);}
-function getStatus(j){var d=daysLeft(j);if(d<0)return'已截止';if(d<=7)return'即将截止';return'可投';}
+function dl(j){var n=new Date;n.setHours(0,0,0,0);var d=new Date(j.deadline);d.setHours(0,0,0,0);return Math.ceil((d-n)/86400000);}
+function gs(j){var d=dl(j);return d<0?'已截止':d<=7?'即将截止':'可投';}
+function nc(c){
+  if(!c)return'其他';var s=c.toString().toLowerCase();
+  if(s.indexOf('算法')>=0)return'算法';if(s.indexOf('开发')>=0||s.indexOf('研发')>=0||s.indexOf('软件')>=0)return'开发';
+  if(s.indexOf('硬件')>=0||s.indexOf('芯片')>=0)return'硬件';if(s.indexOf('嵌入式')>=0)return'嵌入式';
+  if(s.indexOf('产品')>=0)return'产品';if(s.indexOf('运营')>=0)return'运营';if(s.indexOf('测试')>=0)return'测试';
+  if(s.indexOf('设计')>=0||s.indexOf('美术')>=0)return'设计';if(s.indexOf('市场')>=0||s.indexOf('营销')>=0||s.indexOf('销售')>=0)return'市场';
+  if(s.indexOf('职能')>=0||s.indexOf('人力')>=0||s.indexOf('行政')>=0||s.indexOf('财务')>=0)return'职能';
+  if(s.indexOf('机械')>=0||s.indexOf('结构')>=0)return'机械结构';if(s.indexOf('数据')>=0)return'数据';
+  if(s.indexOf('安全')>=0)return'安全';if(s.indexOf('供应链')>=0||s.indexOf('采购')>=0)return'供应链';
+  if(s.indexOf('项目')>=0)return'项目管理';if(s.indexOf('策划')>=0||s.indexOf('游戏')>=0)return'游戏策划';
+  if(s.indexOf('金融')>=0)return'金融';if(s.indexOf('技术')>=0)return'开发';
+  return'其他';
+}
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+function toast(m){var t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(function(){t.remove();},2000);}
 
-// ===== RENDER =====
-function buildCatTags(){
+// ===== INIT =====
+function init(){
+  DATA=JSON.parse(JSON.stringify(JOBS_DATA));
+  DATA.forEach(function(j){j.category=nc(j.category||'');if(!j.education)j.education='本科及以上';if(!j.salary)j.salary='详见岗位描述';if(!j.status)j.status='可投';if(!j.deadline)j.deadline='2026-12-31';if(!j.updateTime)j.updateTime='2026-08-12';});
+  try{var s=JSON.parse(localStorage.campus_data||'[]');if(s.length>0)DATA=s;}catch(e){}
+  buildTags();refresh();
+  document.getElementById('loading').style.display='none';
+  document.getElementById('app').style.display='';
+}
+function buildTags(){
   var cats=[...new Set(DATA.map(function(j){return j.category;}))].sort();
-  var h='<span class="tag on" data-v="all" onclick="toggleTag(this,\'cats\')">全部</span>';
-  cats.forEach(function(c){h+='<span class="tag" data-v="'+c+'" onclick="toggleTag(this,\'cats\')">'+c+'</span>';});
-  document.getElementById('catTags').innerHTML=h;
-}
-function buildCityTags(){
+  document.getElementById('ctags').innerHTML='<span class="tag on" data-v="all" onclick="tgl(this,\'cats\')">全部</span>'+cats.map(function(c){return'<span class="tag" data-v="'+c+'" onclick="tgl(this,\'cats\')">'+c+'</span>';}).join('');
   var cities=['北京','上海','深圳','广州','杭州','成都','南京','武汉','西安','苏州','重庆','长沙','天津','合肥','厦门','珠海','东莞','佛山','全国'];
-  var h='<span class="tag on" data-v="all" onclick="toggleTag(this,\'cities\')">全部</span>';
-  cities.forEach(function(c){
-    var n=DATA.filter(function(j){return j.city.indexOf(c)>=0;}).length;
-    h+='<span class="tag" data-v="'+c+'" onclick="toggleTag(this,\'cities\')">'+c+'('+n+')</span>';
-  });
-  document.getElementById('cityTags').innerHTML=h;
-}
-function toggleTag(el,key){
-  var v=el.dataset.v;
-  if(v==='all'){FILTERS[key].clear();var p=el.parentElement;var tags=p.querySelectorAll('.tag');tags.forEach(function(t){t.classList.remove('on');});el.classList.add('on');}
-  else{
-    if(FILTERS[key].has(v)){FILTERS[key].delete(v);el.classList.remove('on');if(FILTERS[key].size===0)el.parentElement.querySelector('[data-v="all"]').classList.add('on');}
-    else{FILTERS[key].add(v);el.classList.add('on');el.parentElement.querySelector('[data-v="all"]').classList.remove('on');}
-  }
-  refresh();
+  document.getElementById('xtags').innerHTML='<span class="tag on" data-v="all" onclick="tgl(this,\'cities\')">全部</span>'+cities.map(function(c){var n=DATA.filter(function(j){return j.city.indexOf(c)>=0;}).length;return'<span class="tag" data-v="'+c+'" onclick="tgl(this,\'cities\')">'+c+'('+n+')</span>';}).join('');
+  document.getElementById('ztags').innerHTML='<span class="tag on" data-v="all" onclick="tgl(this,\'status\')">全部</span><span class="tag" data-v="可投" onclick="tgl(this,\'status\')">🟢可投</span><span class="tag" data-v="即将截止" onclick="tgl(this,\'status\')">🟡将截止</span><span class="tag" data-v="已截止" onclick="tgl(this,\'status\')">🔴已截止</span>';
 }
 
-function getFiltered(){
+// ===== FILTER =====
+function filtered(){
   var f=DATA.slice();
-  if(FILTERS.search){var q=FILTERS.search.toLowerCase();f=f.filter(function(j){return j.company.toLowerCase().indexOf(q)>=0||j.title.toLowerCase().indexOf(q)>=0;});}
-  if(FILTERS.cats.size>0)f=f.filter(function(j){return FILTERS.cats.has(j.category);});
-  if(FILTERS.cities.size>0)f=f.filter(function(j){var self=this;return [...FILTERS.cities].some(function(c){return j.city.indexOf(c)>=0;});});
-  if(FILTERS.status.size>0)f=f.filter(function(j){return FILTERS.status.has(getStatus(j));});
-  if(FILTERS.favOnly)f=f.filter(function(j){return FILTERS.favs.has(j.company+'|'+j.title);});
-  if(FILTERS.sort==='deadline')f.sort(function(a,b){return new Date(a.deadline)-new Date(b.deadline);});
-  else if(FILTERS.sort==='-deadline')f.sort(function(a,b){return new Date(b.deadline)-new Date(a.deadline);});
-  else if(FILTERS.sort==='company')f.sort(function(a,b){return a.company.localeCompare(b.company,'zh');});
+  if(F.search){var q=F.search.toLowerCase();f=f.filter(function(j){return j.company.toLowerCase().indexOf(q)>=0||j.title.toLowerCase().indexOf(q)>=0;});}
+  if(F.cats.size>0)f=f.filter(function(j){return F.cats.has(j.category);});
+  if(F.cities.size>0)f=f.filter(function(j){return[...F.cities].some(function(c){return j.city.indexOf(c)>=0;});});
+  if(F.status.size>0)f=f.filter(function(j){return F.status.has(gs(j));});
+  if(F.favOnly)f=f.filter(function(j){return F.favs.has(j.company+'|'+j.title);});
+  if(F.sort==='deadline')f.sort(function(a,b){return new Date(a.deadline)-new Date(b.deadline);});
+  else if(F.sort==='-deadline')f.sort(function(a,b){return new Date(b.deadline)-new Date(a.deadline);});
+  else if(F.sort==='company')f.sort(function(a,b){return a.company.localeCompare(b.company,'zh');});
   return f;
 }
 
+// ===== RENDER =====
 function refresh(){
-  var jobs=getFiltered();
-  document.getElementById('resultInfo').textContent='共 '+jobs.length+' 条岗位';
-  var total=DATA.length,open=DATA.filter(function(j){return getStatus(j)==='可投';}).length;
-  var soon=DATA.filter(function(j){return getStatus(j)==='即将截止';}).length;
-  var ended=DATA.filter(function(j){return getStatus(j)==='已截止';}).length;
-  document.getElementById('stats').innerHTML='<div class="s"><div class="n">'+total+'</div><div class="l">📋 总数</div></div><div class="s"><div class="n" style="color:#10b981">'+open+'</div><div class="l">🟢 可投</div></div><div class="s"><div class="n" style="color:#f59e0b">'+soon+'</div><div class="l">🟡 将截止</div></div><div class="s"><div class="n" style="color:#ef4444">'+ended+'</div><div class="l">🔴 已截止</div></div><div class="s"><div class="n" style="color:#f59e0b">'+FILTERS.favs.size+'</div><div class="l">⭐ 收藏</div></div>';
-
-  var isTable=FILTERS.view==='table';
-  document.getElementById('tableView').style.display=isTable?'':'none';
-  document.getElementById('cardView').style.display=isTable?'none':'grid';
-  document.getElementById('empty').style.display=jobs.length?'none':'';
-  document.getElementById('viewBtn').textContent=isTable?'🃏 卡片':'📋 表格';
-
-  if(isTable)renderTable(jobs);else renderCards(jobs);
-  save();
+  var jobs=filtered();
+  document.getElementById('ri').textContent='共'+jobs.length+'条';
+  var total=DATA.length,o=DATA.filter(function(j){return gs(j)==='可投';}).length;
+  var s=DATA.filter(function(j){return gs(j)==='即将截止';}).length;
+  var e=DATA.filter(function(j){return gs(j)==='已截止';}).length;
+  document.getElementById('stats').innerHTML='<div class="s"><div class="n">'+total+'</div><div class="l">📋总数</div></div><div class="s"><div class="n" style="color:#10b981">'+o+'</div><div class="l">🟢可投</div></div><div class="s"><div class="n" style="color:#f59e0b">'+s+'</div><div class="l">🟡将截止</div></div><div class="s"><div class="n" style="color:#ef4444">'+e+'</div><div class="l">🔴已截止</div></div><div class="s"><div class="n" style="color:#f59e0b">'+F.favs.size+'</div><div class="l">⭐收藏</div></div>';
+  var isT=F.view==='table';
+  document.getElementById('tv').style.display=isT?'':'none';
+  document.getElementById('cv').style.display=isT?'none':'grid';
+  document.getElementById('em').style.display=jobs.length?'none':'';
+  document.getElementById('vBtn').textContent=isT?'🃏':'📋';
+  if(isT)rt(jobs);else rc(jobs);
+  sv();
 }
-
-function renderTable(jobs){
+function rt(jobs){
   var h='';
   for(var i=0;i<jobs.length;i++){
-    var j=jobs[i],st=getStatus(j),d=daysLeft(j),k=j.company+'|'+j.title;
-    var rc=st==='即将截止'?'row-soon':st==='已截止'?'row-ended':'';
-    var cd=d>=0?(d<=7?'<span style="color:#ef4444;font-size:.7rem;margin-left:4px">剩'+d+'天</span>':'<span style="color:#999;font-size:.7rem;margin-left:4px">剩'+d+'天</span>'):'';
-    var star=FILTERS.favs.has(k)?'⭐':'☆';
-    h+='<tr class="'+rc+'"><td><button class="btn-fav" onclick="fav(\''+k+'\')">'+star+'</button></td>';
-    h+='<td><b>'+esc(j.company)+'</b></td><td>'+esc(j.title)+'</td><td>'+esc(j.category)+'</td><td>'+esc(j.city)+'</td><td>'+esc(j.education)+'</td>';
+    var j=jobs[i],st=gs(j),d=dl(j),k=j.company+'|'+j.title;
+    var rc=st==='即将截止'?'r-soon':st==='已截止'?'r-end':'';
+    var cd=d>=0?(d<=7?'<span style="color:#ef4444;font-size:.7rem;margin-left:3px">剩'+d+'天</span>':'<span style="color:#999;font-size:.7rem;margin-left:3px">剩'+d+'天</span>'):'';
+    h+='<tr class="'+rc+'"><td><button class="btn-star" onclick="fav(\''+esc(k)+'\')">'+(F.favs.has(k)?'⭐':'☆')+'</button></td>';
+    h+='<td><b>'+esc(j.company)+'</b></td><td>'+esc(j.title)+'</td><td>'+esc(j.category)+'</td><td>'+esc(j.city)+'</td><td>'+(j.education||'本科及以上')+'</td>';
     h+='<td>'+j.deadline+cd+'</td>';
     h+='<td><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+'</td>';
     h+='<td>';
-    if(j.link) h+='<a href="'+esc(j.link)+'" target="_blank" class="btn-sm btn-go">📝 投递</a> ';
-    else h+='<span style="color:#999;font-size:.73rem">无链接</span> ';
-    if(FILTERS.admin) h+='<button class="btn-sm" style="background:#f0f0f0;margin-left:4px" onclick="editJob('+DATA.indexOf(j)+')">✏️</button> <button class="btn-sm" style="background:#fef2f2;color:#ef4444" onclick="delJob('+DATA.indexOf(j)+')">🗑</button>';
+    if(j.link)h+='<a href="'+esc(j.link)+'" target="_blank" class="btn btn-go">📝投递</a> ';
+    if(F.admin)h+='<button class="btn" style="background:#f0f0f0;margin-left:2px" onclick="editJob('+DATA.indexOf(j)+')">✏️</button> <button class="btn" style="background:#fef2f2;color:#ef4444" onclick="delJob('+DATA.indexOf(j)+')">🗑</button>';
     h+='</td></tr>';
   }
-  document.getElementById('tbody').innerHTML=h;
+  document.getElementById('tb').innerHTML=h;
 }
-
-function renderCards(jobs){
+function rc(jobs){
   var h='';
   for(var i=0;i<jobs.length;i++){
-    var j=jobs[i],st=getStatus(j),d=daysLeft(j),k=j.company+'|'+j.title;
+    var j=jobs[i],st=gs(j),d=dl(j),k=j.company+'|'+j.title;
     var cd=d>=0?(d<=7?'⚡剩'+d+'天':'剩'+d+'天'):'';
-    h+='<div class="card"><div class="ch"><b class="cname">'+esc(j.company)+'</b><button class="btn-fav" onclick="fav(\''+k+'\')">'+(FILTERS.favs.has(k)?'⭐':'☆')+'</button></div>';
-    h+='<div class="ctitle">'+esc(j.title)+'</div><div class="cmeta"><span>📂 '+esc(j.category)+'</span><span>📍 '+esc(j.city)+'</span><span>🎓 '+esc(j.education)+'</span><span>📅 '+j.deadline+' '+cd+'</span></div>';
+    h+='<div class="crd"><div class="ch"><b class="cn">'+esc(j.company)+'</b><button class="btn-star" onclick="fav(\''+esc(k)+'\')">'+(F.favs.has(k)?'⭐':'☆')+'</button></div>';
+    h+='<div class="ct">'+esc(j.title)+'</div><div class="cm"><span>📂'+esc(j.category)+'</span><span>📍'+esc(j.city)+'</span><span>🎓'+(j.education||'本科及以上')+'</span><span>📅'+j.deadline+' '+cd+'</span></div>';
     h+='<div class="cf"><span><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+'</span>';
-    if(j.link) h+='<a href="'+esc(j.link)+'" target="_blank" class="btn-sm btn-go">📝 投递</a>';
+    if(j.link)h+='<a href="'+esc(j.link)+'" target="_blank" class="btn btn-go">📝投递</a>';
     h+='</div></div>';
   }
-  document.getElementById('cardView').innerHTML=h;
-}
-
-function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
-
-// Category normalization
-function normCat(c){
-  if(!c)return'其他';
-  var s=c.toString().toLowerCase();
-  if(s.indexOf('算法')>=0||s.indexOf('alg')>=0)return'算法';
-  if(s.indexOf('开发')>=0||s.indexOf('研发')>=0||s.indexOf('前端')>=0||s.indexOf('后端')>=0||s.indexOf('全栈')>=0||s.indexOf('软件')>=0||s.indexOf('java')>=0||s.indexOf('c++')>=0)return'开发';
-  if(s.indexOf('硬件')>=0||s.indexOf('芯片')>=0||s.indexOf('ic')>=0||s.indexOf('电路')>=0||s.indexOf('fpga')>=0)return'硬件';
-  if(s.indexOf('嵌入式')>=0)return'嵌入式';
-  if(s.indexOf('产品')>=0)return'产品';
-  if(s.indexOf('运营')>=0)return'运营';
-  if(s.indexOf('测试')>=0)return'测试';
-  if(s.indexOf('设计')>=0||s.indexOf('美术')>=0||s.indexOf('ui')>=0||s.indexOf('ux')>=0||s.indexOf('原画')>=0)return'设计';
-  if(s.indexOf('市场')>=0||s.indexOf('营销')>=0||s.indexOf('销售')>=0||s.indexOf('投放')>=0)return'市场';
-  if(s.indexOf('职能')>=0||s.indexOf('人力')>=0||s.indexOf('hr')>=0||s.indexOf('行政')>=0||s.indexOf('财务')>=0||s.indexOf('法务')>=0)return'职能';
-  if(s.indexOf('机械')>=0||s.indexOf('结构')>=0)return'机械结构';
-  if(s.indexOf('数据')>=0)return'数据';
-  if(s.indexOf('安全')>=0)return'安全';
-  if(s.indexOf('供应链')>=0||s.indexOf('采购')>=0||s.indexOf('物流')>=0)return'供应链';
-  if(s.indexOf('项目')>=0)return'项目管理';
-  if(s.indexOf('策划')>=0||s.indexOf('游戏')>=0)return'游戏策划';
-  return'其他';
+  document.getElementById('cv').innerHTML=h;
 }
 
 // ===== ACTIONS =====
-function fav(k){if(FILTERS.favs.has(k))FILTERS.favs.delete(k);else FILTERS.favs.add(k);refresh();toast(FILTERS.favs.has(k)?'⭐ 已收藏':'取消收藏');}
-function toggleFav(){FILTERS.favOnly=!FILTERS.favOnly;document.getElementById('favBtn').classList.toggle('on',FILTERS.favOnly);refresh();}
-function setSort(f){FILTERS.sort=f;document.getElementById('sortBy').value=f;refresh();}
-function toggleView(){FILTERS.view=FILTERS.view==='table'?'card':'table';refresh();}
-function resetAll(){FILTERS.search='';FILTERS.cats.clear();FILTERS.cities.clear();FILTERS.status.clear();FILTERS.sort='deadline';FILTERS.favOnly=false;document.getElementById('search').value='';document.getElementById('sortBy').value='deadline';document.getElementById('favBtn').classList.remove('on');document.querySelectorAll('.tag[data-v="all"]').forEach(function(t){t.classList.add('on');});document.querySelectorAll('.tag:not([data-v="all"])').forEach(function(t){t.classList.remove('on');});refresh();toast('已重置');}
-function doExport(){
-  var jobs=getFiltered();
+function tgl(el,key){
+  var v=el.dataset.v;
+  if(v==='all'){F[key].clear();el.parentElement.querySelectorAll('.tag').forEach(function(t){t.classList.remove('on');});el.classList.add('on');}
+  else{if(F[key].has(v)){F[key].delete(v);el.classList.remove('on');if(F[key].size===0)el.parentElement.querySelector('[data-v="all"]').classList.add('on');}
+  else{F[key].add(v);el.classList.add('on');el.parentElement.querySelector('[data-v="all"]').classList.remove('on');}}
+  refresh();
+}
+function fav(k){F.favs.has(k)?F.favs.delete(k):F.favs.add(k);refresh();toast(F.favs.has(k)?'⭐已收藏':'取消收藏');}
+function toggleFav(){F.favOnly=!F.favOnly;document.getElementById('fb').classList.toggle('on',F.favOnly);refresh();}
+function toggleView(){F.view=F.view==='table'?'card':'table';refresh();}
+function resetFilters(){F.search='';F.cats.clear();F.cities.clear();F.status.clear();F.sort='deadline';F.favOnly=false;document.getElementById('srch').value='';document.getElementById('srt').value='deadline';document.getElementById('fb').classList.remove('on');document.querySelectorAll('.tag[data-v="all"]').forEach(function(t){t.classList.add('on');});document.querySelectorAll('.tag:not([data-v="all"])').forEach(function(t){t.classList.remove('on');});refresh();toast('已重置');}
+function exportCSV(){
+  var jobs=filtered();
   var csv='\uFEFF公司,岗位,类别,城市,学历,截止时间,状态,链接\n';
-  jobs.forEach(function(j){csv+='"'+j.company+'","'+j.title+'","'+j.category+'","'+j.city+'","'+j.education+'","'+j.deadline+'","'+getStatus(j)+'","'+(j.link||'')+'"\n';});
+  jobs.forEach(function(j){csv+='"'+j.company+'","'+j.title+'","'+j.category+'","'+j.city+'","'+(j.education||'')+'","'+j.deadline+'","'+gs(j)+'","'+(j.link||'')+'"\n';});
   var b=new Blob([csv],{type:'text/csv;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='岗位导出.csv';a.click();toast('导出成功');
 }
-function toast(m){var t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(function(){t.remove();},2000);}
 
 // ===== ADMIN =====
-function toggleAdmin(){
-  FILTERS.admin=!FILTERS.admin;
-  document.getElementById('adminBar').style.display=FILTERS.admin?'':'none';
-  refresh();
+function toggleAdmin(){F.admin=!F.admin;document.getElementById('adm').style.display=F.admin?'':'none';refresh();}
+function addJob(idx){document.getElementById('fti').textContent=typeof idx==='number'?'编辑岗位':'新增岗位';
+  if(typeof idx==='number'){var j=DATA[idx];document.getElementById('fc').value=j.company;document.getElementById('ft').value=j.title;document.getElementById('fg').value=j.category;document.getElementById('fx').value=j.city;document.getElementById('fe').value=j.education||'本科及以上';document.getElementById('fd').value=j.deadline;document.getElementById('fl').value=j.link||'';document.getElementById('fr').value=j.referralCode||'';document.getElementById('fi2').value=idx;}
+  else{document.getElementById('fc').value='';document.getElementById('ft').value='';document.getElementById('fg').value='算法';document.getElementById('fx').value='';document.getElementById('fe').value='本科及以上';document.getElementById('fd').value=new Date(Date.now()+30*86400000).toISOString().slice(0,10);document.getElementById('fl').value='';document.getElementById('fr').value='';document.getElementById('fi2').value='-1';}
+  document.getElementById('fm').style.display='flex';
 }
-function showAddForm(idx){
-  var modal=document.getElementById('formModal');
-  if(typeof idx==='number'&&idx>=0){
-    document.getElementById('formTitle').textContent='编辑岗位';
-    var j=DATA[idx];
-    document.getElementById('fCompany').value=j.company;
-    document.getElementById('fTitle').value=j.title;
-    document.getElementById('fCat').value=j.category;
-    document.getElementById('fCity').value=j.city;
-    document.getElementById('fEdu').value=j.education;
-    document.getElementById('fDeadline').value=j.deadline;
-    document.getElementById('fLink').value=j.link||'';
-    document.getElementById('fRef').value=j.referralCode||'';
-    document.getElementById('fIndex').value=idx;
-  }else{
-    document.getElementById('formTitle').textContent='新增岗位';
-    document.getElementById('fCompany').value='';
-    document.getElementById('fTitle').value='';
-    document.getElementById('fCat').value='算法';
-    document.getElementById('fCity').value='';
-    document.getElementById('fEdu').value='本科及以上';
-    document.getElementById('fDeadline').value=new Date(Date.now()+30*86400000).toISOString().slice(0,10);
-    document.getElementById('fLink').value='';
-    document.getElementById('fRef').value='';
-    document.getElementById('fIndex').value='-1';
-  }
-  modal.style.display='flex';
-}
-function closeForm(){document.getElementById('formModal').style.display='none';}
-function editJob(idx){showAddForm(idx);}
-function delJob(idx){
-  if(!confirm('确定删除「'+DATA[idx].company+' - '+DATA[idx].title+'」？'))return;
-  DATA.splice(idx,1);
-  saveData();
-  refresh();
-  toast('已删除');
-}
+function editJob(idx){addJob(idx);}
+function closeForm(){document.getElementById('fm').style.display='none';}
+function delJob(idx){if(!confirm('确定删除「'+DATA[idx].company+' - '+DATA[idx].title+'」？'))return;DATA.splice(idx,1);svd();refresh();toast('已删除');}
 function saveJob(){
-  var idx=parseInt(document.getElementById('fIndex').value);
-  var job={
-    company:document.getElementById('fCompany').value.trim(),
-    title:document.getElementById('fTitle').value.trim(),
-    category:normCat(document.getElementById('fCat').value.trim()||'其他'),
-    city:document.getElementById('fCity').value.trim()||'全国',
-    education:document.getElementById('fEdu').value,
-    deadline:document.getElementById('fDeadline').value,
-    link:document.getElementById('fLink').value.trim(),
-    referralCode:document.getElementById('fRef').value.trim(),
-    salary:'详见岗位描述',
-    updateTime:new Date().toISOString().slice(0,10)
-  };
-  if(!job.company||!job.title){toast('公司和岗位名必填');return;}
-  if(idx>=0&&idx<DATA.length){DATA[idx]=job;toast('已更新');}
-  else{DATA.unshift(job);toast('已新增');}
-  saveData();
-  closeForm();
-  refresh();
+  var idx=parseInt(document.getElementById('fi2').value);
+  var job={company:document.getElementById('fc').value.trim(),title:document.getElementById('ft').value.trim(),category:nc(document.getElementById('fg').value.trim()||'其他'),city:document.getElementById('fx').value.trim()||'全国',education:document.getElementById('fe').value,deadline:document.getElementById('fd').value,link:document.getElementById('fl').value.trim(),referralCode:document.getElementById('fr').value.trim(),salary:'详见岗位描述',status:'可投',updateTime:new Date().toISOString().slice(0,10)};
+  if(!job.company||!job.title){toast('公司和岗位必填');return;}
+  if(idx>=0&&idx<DATA.length){DATA[idx]=job;toast('已更新');}else{DATA.unshift(job);toast('已新增');}
+  svd();closeForm();buildTags();refresh();
 }
-function dedupData(){
-  var seen=new Set();var removed=0;
-  DATA=DATA.filter(function(j){
-    // Normalize company name for dedup (remove spaces, common suffixes)
-    var c=j.company.replace(/\s+/g,'').replace(/(科技|技术|集团|有限|公司|股份|有限|责任)+$/g,'');
-    var t=j.title.replace(/\s+/g,'');
-    var k=c+'|'+t;
-    if(seen.has(k)){removed++;return false;}
-    seen.add(k);return true;
-  });
-  saveData();
-  buildCatTags();buildCityTags();refresh();
-  toast('去重完成：移除 '+removed+' 条重复');
+function dedup(){
+  var seen=new Set,rem=0;
+  DATA=DATA.filter(function(j){var k=j.company.replace(/\s+/g,'')+'|'+j.title.replace(/\s+/g,'');if(seen.has(k)){rem++;return false;}seen.add(k);return true;});
+  svd();buildTags();refresh();toast('移除'+rem+'条重复');
 }
-function exportJSON(){
-  var js='const JOBS_DATA = '+JSON.stringify(DATA,null,2)+';\n';
-  var b=new Blob([js],{type:'application/javascript'});
-  var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='jobs-data.js';a.click();
-  toast('数据文件已导出，覆盖原文件即可');
+function resetData(){
+  if(!confirm('恢复默认数据？修改会丢失。'))return;
+  localStorage.removeItem('campus_data');DATA=JSON.parse(JSON.stringify(JOBS_DATA));
+  DATA.forEach(function(j){j.category=nc(j.category||'');if(!j.education)j.education='本科及以上';if(!j.salary)j.salary='详见岗位描述';});
+  svd();buildTags();refresh();toast('已恢复');
 }
 
 // ===== IMPORT =====
-document.getElementById('dropZone').onclick=function(){document.getElementById('fileInput').click();};
-document.getElementById('dropZone').ondragover=function(e){e.preventDefault();this.style.background='#f0f0ff';};
-document.getElementById('dropZone').ondragleave=function(){this.style.background='';};
-document.getElementById('dropZone').ondrop=function(e){e.preventDefault();this.style.background='';handleFile(e.dataTransfer.files[0]);};
-document.getElementById('formModal').onclick=function(e){if(e.target===this)closeForm();};
+document.getElementById('dz').onclick=function(){document.getElementById('fi').click();};
+document.getElementById('dz').ondragover=function(e){e.preventDefault();};
+document.getElementById('dz').ondrop=function(e){e.preventDefault();handleFile(e.dataTransfer.files[0]);};
+document.getElementById('fm').onclick=function(e){if(e.target===this)closeForm();};
 
 function handleFile(file){
   if(!file)return;
-  var name=file.name.toLowerCase();
-  document.getElementById('importMsg').textContent='正在解析...';
-  
-  if(name.endsWith('.xlsx')||name.endsWith('.xls')){
-    document.getElementById('importMsg').textContent='❌ 不支持直接导入Excel，请：Excel→另存为→CSV格式→再导入';
-    return;
-  }
-  
+  var n=file.name.toLowerCase();
+  document.getElementById('im').textContent='解析中...';
   var reader=new FileReader();
   reader.onload=function(e){
     try{
-      var text=e.target.result;
-      if(name.endsWith('.json')||name.endsWith('.js')){
-        var start=text.indexOf('[');var end=text.lastIndexOf(']')+1;
-        if(start>=0&&end>start){var arr=JSON.parse(text.substring(start,end));importJobs(arr);return;}
-        document.getElementById('importMsg').textContent='JSON格式不正确';return;
+      var t=e.target.result;
+      if(n.endsWith('.json')||n.endsWith('.js')){
+        var s=t.indexOf('['),en=t.lastIndexOf(']')+1;
+        if(s>=0&&en>s){importJobs(JSON.parse(t.substring(s,en)));return;}
       }
-      if(name.endsWith('.csv')){
-        var lines=text.split('\n').filter(function(l){return l.trim();});
-        if(lines.length<2){document.getElementById('importMsg').textContent='CSV格式不正确';return;}
+      if(n.endsWith('.csv')){
+        var lines=t.split('\n').filter(function(l){return l.trim();});
+        if(lines.length<2){document.getElementById('im').textContent='CSV格式不正确';return;}
         var arr=[];
         for(var i=1;i<lines.length;i++){
-          var cols=parseCSVLine(lines[i]);
-          if(cols.length<2)continue;
-          var c=(cols[0]||'').replace(/"/g,'').trim(),t=(cols[1]||'').replace(/"/g,'').trim();
-          if(!c||!t)continue;
-          arr.push({company:c,title:t,category:normCat(cols[2]||''),city:cols[3]||'全国',education:cols[4]||'本科及以上',deadline:cols[5]||new Date(Date.now()+30*86400000).toISOString().slice(0,10),link:cols[7]||'',referralCode:cols[8]||'',salary:'详见岗位描述',updateTime:new Date().toISOString().slice(0,10)});
+          var cols=parseCSV(lines[i]);if(cols.length<2)continue;
+          var c=(cols[0]||'').replace(/"/g,'').trim(),tl=(cols[1]||'').replace(/"/g,'').trim();
+          if(!c||!tl)continue;
+          arr.push({company:c,title:tl,category:nc(cols[2]||''),city:cols[3]||'全国',education:cols[4]||'本科及以上',deadline:cols[5]||new Date(Date.now()+30*86400000).toISOString().slice(0,10),link:cols[7]||'',referralCode:cols[8]||'',salary:'详见岗位描述',status:'可投',updateTime:new Date().toISOString().slice(0,10)});
         }
         importJobs(arr);return;
       }
-      document.getElementById('importMsg').textContent='支持 .csv .json 格式，Excel请另存为CSV';
-    }catch(err){document.getElementById('importMsg').textContent='解析失败: '+err.message;}
+      document.getElementById('im').textContent='支持CSV/JSON格式';
+    }catch(err){document.getElementById('im').textContent='解析失败:'+err.message;}
   };
   reader.readAsText(file,'UTF-8');
 }
-
-function parseCSVLine(line){
-  var result=[],current='',inQuotes=false;
+function parseCSV(line){
+  var r=[],cur='',q=false;
   for(var i=0;i<line.length;i++){
     var c=line[i];
-    if(inQuotes){if(c==='"'){if(i+1<line.length&&line[i+1]==='"'){current+='"';i++;}else inQuotes=false;}else current+=c;}
-    else{if(c==='"')inQuotes=true;else if(c===','){result.push(current.trim());current='';}else current+=c;}
+    if(q){if(c==='"'){if(i+1<line.length&&line[i+1]==='"'){cur+='"';i++;}else q=false;}else cur+=c;}
+    else{if(c==='"')q=true;else if(c===','){r.push(cur.trim());cur='';}else cur+=c;}
   }
-  result.push(current.trim());
-  return result;
+  r.push(cur.trim());return r;
 }
-
 function importJobs(arr){
-  // Build key set with normalization
-  function key(j){var c=j.company.replace(/\s+/g,'').replace(/(科技|技术|集团|有限|公司|股份|有限|责任)+$/g,'');var t=j.title.replace(/\s+/g,'');return c+'|'+t;}
-  var exist=new Set(DATA.map(key));
+  var exist=new Set(DATA.map(function(j){return j.company.replace(/\s+/g,'')+'|'+j.title.replace(/\s+/g,'');}));
   var added=0,skipped=0;
   arr.forEach(function(j){
     if(!j.company||!j.title)return;
     if(!j.deadline)j.deadline=new Date(Date.now()+30*86400000).toISOString().slice(0,10);
-    j.category=normCat(j.category);
-    if(exist.has(key(j))){skipped++;return;}
-    exist.add(key(j));
-    DATA.unshift(j);added++;
+    j.category=nc(j.category||'');if(!j.education)j.education='本科及以上';if(!j.salary)j.salary='详见岗位描述';
+    var k=j.company.replace(/\s+/g,'')+'|'+j.title.replace(/\s+/g,'');
+    if(exist.has(k)){skipped++;return;}
+    exist.add(k);DATA.unshift(j);added++;
   });
-  saveData();
-  document.getElementById('importMsg').textContent='✅ 导入 '+added+' 条，跳过 '+skipped+' 条重复';
-  buildCatTags();buildCityTags();refresh();
-  toast('导入完成：'+added+' 条');
+  svd();document.getElementById('im').textContent='✅导入'+added+'条，跳过'+skipped+'条重复';buildTags();refresh();toast('导入'+added+'条');
 }
 
-function resetData(){
-  if(!confirm('恢复默认数据？你手动添加/编辑的内容会丢失。'))return;
-  localStorage.removeItem('campus_data');
-  DATA=JSON.parse(JSON.stringify(JOBS_DATA));
-  DATA.forEach(function(j){j.category=normCat(j.category);});
-  buildCatTags();buildCityTags();refresh();
-  toast('已恢复默认数据');
-}
+// ===== EVENT BINDINGS =====
+document.getElementById('srch').oninput=function(){F.search=this.value;refresh();};
+document.getElementById('srt').onchange=function(){F.sort=this.value;refresh();};
 
-// ===== INIT =====
-buildCatTags();
-buildCityTags();
-document.getElementById('statusTags').innerHTML='<span class="tag on" data-v="all" onclick="toggleTag(this,\'status\')">全部</span><span class="tag" data-v="可投" onclick="toggleTag(this,\'status\')">🟢 可投</span><span class="tag" data-v="即将截止" onclick="toggleTag(this,\'status\')">🟡 将截止</span><span class="tag" data-v="已截止" onclick="toggleTag(this,\'status\')">🔴 已截止</span>';
-document.getElementById('search').oninput=function(){FILTERS.search=this.value;refresh();};
-document.getElementById('sortBy').onchange=function(){FILTERS.sort=this.value;refresh();};
-if(FILTERS.favOnly)document.getElementById('favBtn').classList.add('on');
-if(FILTERS.view==='card')document.getElementById('viewBtn').textContent='📋 表格';
-refresh();
-console.log('v3.0 ready | '+DATA.length+' jobs');
+// ===== START =====
+// Load data async - don't block rendering
+fetch('jobs-data.js')
+  .then(function(r){return r.text();})
+  .then(function(t){
+    var s=t.indexOf('['),e=t.lastIndexOf(']')+1;
+    window.JOBS_DATA=JSON.parse(t.substring(s,e));
+    init();
+  })
+  .catch(function(){
+    document.getElementById('loading').innerHTML='❌ 数据加载失败，请刷新重试';
+  });
 </script>
 </body>
 </html>
