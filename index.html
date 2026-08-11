@@ -221,6 +221,7 @@ tr.row-closed:hover td{opacity:1}
       <h1><span>🎓</span>27届校招岗位汇总</h1>
       <div class="header-info">
         <span>📅 更新：<strong id="updateTime">--</strong></span>
+        <span>v2.1</span>
         <span>💡 点击岗位直接跳转官网投递，内推码已内置链接</span>
       </div>
     </div>
@@ -664,11 +665,15 @@ function exportDataJS(){
 
 // ========== ADMIN ==========
 function toggleAdmin(){
-  STATE.adminOpen=!STATE.adminOpen;
-  document.getElementById('adminPanel').style.display=STATE.adminOpen?'':'none';
-  document.getElementById('adminToggleBtn').classList.toggle('primary',STATE.adminOpen);
-  if(STATE.adminOpen){renderOverview();renderAdminJobList();}
-  saveState();
+  try {
+    STATE.adminOpen=!STATE.adminOpen;
+    var panel=document.getElementById('adminPanel');
+    if(panel) panel.style.display=STATE.adminOpen?'':'none';
+    var btn=document.getElementById('adminToggleBtn');
+    if(btn) btn.classList.toggle('primary',STATE.adminOpen);
+    if(STATE.adminOpen){if(typeof renderOverview==='function') renderOverview();if(typeof renderAdminJobList==='function') renderAdminJobList();}
+    saveState();
+  } catch(e) { alert('管理面板加载失败: '+e.message); }
 }
 function switchAdminTab(tab){
   const tabs=document.querySelectorAll('.admin-tab');
@@ -930,6 +935,7 @@ function showToast(msg){
 }
 
 // ========== INIT ==========
+try {
 document.getElementById('searchInput').addEventListener('input',function(){STATE.search=this.value;updateAll();});
 document.getElementById('sortSelect').addEventListener('change',function(){STATE.sortBy=this.value;updateAll();});
 document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='f'){e.preventDefault();document.getElementById('searchInput').focus();}});
@@ -952,6 +958,11 @@ document.getElementById('updateTime').textContent = jobsData.length>0 ? jobsData
 updateAll();
 
 console.log(`🚀 27届校招岗位汇总 | ${jobsData.length}岗位 | ${new Set(jobsData.map(j=>j.company)).size}家公司`);
+} catch(e) {
+  console.error('Init error:', e);
+  document.getElementById('updateTime').textContent = '加载失败: ' + e.message;
+  document.getElementById('tableBody').innerHTML = '<tr><td colspan="9" style="text-align:center;padding:40px;color:red">页面加载出错，请刷新重试<br><small>' + e.message + '</small></td></tr>';
+}
 </script>
 </body>
 </html>
