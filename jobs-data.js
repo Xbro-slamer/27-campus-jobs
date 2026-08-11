@@ -41,7 +41,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "产品售后服务岗",
-    "category": "其他",
+    "category": "运营",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -93,7 +93,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "AI测试开发工程师",
-    "category": "测试",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -158,7 +158,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "空间智能OS工程师",
-    "category": "嵌入式",
+    "category": "硬件",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -314,7 +314,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "工业工程师",
-    "category": "开发",
+    "category": "机械结构",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -327,7 +327,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "AI产品质量工程师",
-    "category": "测试",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -418,7 +418,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "信息安全工程师",
-    "category": "安全",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -483,7 +483,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "数字化产品经理",
-    "category": "其他",
+    "category": "职能",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -561,7 +561,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "测试Infra工程师",
-    "category": "测试",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -613,7 +613,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "信息安全调查岗",
-    "category": "安全",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -626,7 +626,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "电商培训生",
-    "category": "其他",
+    "category": "运营",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -717,7 +717,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "空间智能应用开发工程师",
-    "category": "嵌入式",
+    "category": "硬件",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -730,7 +730,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "端侧AI系统工程师",
-    "category": "嵌入式",
+    "category": "硬件",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -834,7 +834,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "光学工程师",
-    "category": "其他",
+    "category": "硬件",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -938,7 +938,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "测试工程师",
-    "category": "测试",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -990,7 +990,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "产品组装工艺工程师",
-    "category": "开发",
+    "category": "机械结构",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1003,7 +1003,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "可靠性工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1029,7 +1029,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "产品项目管理岗",
-    "category": "项目管理",
+    "category": "职能",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1081,7 +1081,7 @@ const JOBS_DATA = [
   {
     "company": "大疆",
     "title": "产品测试工艺工程师",
-    "category": "开发",
+    "category": "机械结构",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1108,7 +1108,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "AIforEnergy算法工程师",
     "category": "开发",
-    "city": "北京",
+    "city": "北京上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-05",
@@ -1146,8 +1146,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造质量与调测工程师-传动链",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-04",
@@ -1250,7 +1250,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造技术工程师（电气）",
-    "category": "开发",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1263,7 +1263,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "工业工程工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1276,7 +1276,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造技术工程师（集成工艺）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1289,8 +1289,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造工艺工程师（主机）",
-    "category": "开发",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-18",
@@ -1302,7 +1302,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "LeanManufacturing（India）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "印度",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1367,7 +1367,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "FieldProcessEngineer（LATAM）",
-    "category": "开发",
+    "category": "机械结构",
     "city": "巴西",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1380,8 +1380,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "现场工艺工程师（国内）",
-    "category": "开发",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "上海江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-03",
@@ -1394,7 +1394,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "IDC电力系统仿真工程师",
     "category": "开发",
-    "city": "北京",
+    "city": "北京上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-11",
@@ -1406,8 +1406,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "精益制造工程师",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-11",
@@ -1536,8 +1536,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "产品开发工艺质量管理工程师",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-15",
@@ -1588,8 +1588,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "质量运营工程师（机械传动链）",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-09",
@@ -1627,7 +1627,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造质量与调测工程师（合金）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "内蒙古·呼和浩特",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1666,8 +1666,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造质量工程师",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-01",
@@ -1679,7 +1679,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "供应商质量管理工程师（制造）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1758,7 +1758,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "测试数据智能工程师",
     "category": "产品",
-    "city": "上海",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-04",
@@ -1822,8 +1822,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "包装工程师",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-29",
@@ -1900,7 +1900,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "供应商质量管理工程师（塔基）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -1913,7 +1913,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "售后质量管理（叶片）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2056,8 +2056,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造工艺工程师（机械传动链）",
-    "category": "开发",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-12",
@@ -2095,7 +2095,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "暖通工程师",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2108,7 +2108,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "项目管理工程师（工业化流程）",
-    "category": "项目管理",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2121,8 +2121,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "供应商质量管理工程师（传动链）",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "上海江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-14",
@@ -2147,7 +2147,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "项目管理工程师（国际工业化）",
-    "category": "项目管理",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2238,7 +2238,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造质量与调测工程师-叶片",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2265,7 +2265,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "机械开发工程师（塔架）",
     "category": "开发",
-    "city": "上海",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-08",
@@ -2290,7 +2290,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "质量运营工程师（电气）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2304,7 +2304,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "轴承开发工程师",
     "category": "开发",
-    "city": "上海",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-21",
@@ -2317,7 +2317,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "齿轮箱开发工程师",
     "category": "开发",
-    "city": "上海",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-05",
@@ -2368,7 +2368,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "项目管理工程师（绿氢）",
-    "category": "项目管理",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2446,7 +2446,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "场站一体化工程师",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2472,7 +2472,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "ManufacturingProcessEngineer(GreenHydrogen)",
-    "category": "开发",
+    "category": "机械结构",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2485,7 +2485,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造质量与调测工程师-绿氢",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2498,7 +2498,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "产品开发质量管理工程师（绿氢）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2511,7 +2511,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造工艺工程师（合金）",
-    "category": "开发",
+    "category": "机械结构",
     "city": "内蒙古·呼和浩特",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2524,7 +2524,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "产品开发质量管理工程师（风机）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2550,8 +2550,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "制造技术工程师",
-    "category": "开发",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-09",
@@ -2563,8 +2563,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "研发项目管理工程师",
-    "category": "项目管理",
-    "city": "上海",
+    "category": "职能",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-23",
@@ -2642,7 +2642,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "人力资源（中国/英国/印度）",
     "category": "职能",
-    "city": "上海",
+    "city": "印度英国上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-12",
@@ -2654,8 +2654,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "项目管理与经营协同",
-    "category": "项目管理",
-    "city": "北京",
+    "category": "职能",
+    "city": "北京上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-02",
@@ -2693,7 +2693,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "工程项目管理工程师（国内）",
-    "category": "其他",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2706,7 +2706,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "SiteProjectManagementEngineer（APAC/MEA/LATAM）",
-    "category": "其他",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2719,7 +2719,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "现场质量管理工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2745,7 +2745,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "工程造价与成本管理工程师",
-    "category": "项目管理",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2758,8 +2758,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "产品成本分析与成本模型工程师",
-    "category": "项目管理",
-    "city": "上海",
+    "category": "职能",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-29",
@@ -2784,7 +2784,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "DeliveryServiceEngineer（EUR/IND/AUS）",
-    "category": "其他",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2797,7 +2797,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "交付服务工程师（国内）",
-    "category": "其他",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2811,7 +2811,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "财务预算与分析（国内）",
     "category": "职能",
-    "city": "上海",
+    "city": "江苏·无锡上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-03",
@@ -2823,7 +2823,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "质量合规工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2837,7 +2837,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "ContractBusinessManagemen（APAC/LATAM/EUR/MEA/IND）",
     "category": "职能",
-    "city": "上海",
+    "city": "巴西印度上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-16",
@@ -2889,7 +2889,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-研发平台项目管理",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-17",
@@ -2901,7 +2901,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-储能交流系统质量运营工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2914,7 +2914,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "传动链项目管理工程师（PMO）",
-    "category": "项目管理",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2928,7 +2928,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "全球培训生-电芯结构开发工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-21",
@@ -2940,8 +2940,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-电芯规划工程师",
-    "category": "开发",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-12",
@@ -2953,7 +2953,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-电芯规划工程师-中国/江苏/无锡市/江阴市-ESSIE",
-    "category": "开发",
+    "category": "机械结构",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -2966,8 +2966,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-现场工艺工程师",
-    "category": "开发",
-    "city": "·沧州",
+    "category": "机械结构",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-06",
@@ -2979,8 +2979,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-设备软件工程师",
-    "category": "其他",
-    "city": "·沧州",
+    "category": "机械结构",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-16",
@@ -2992,8 +2992,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-生产管理工程师",
-    "category": "其他",
-    "city": "·沧州",
+    "category": "机械结构",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-27",
@@ -3006,7 +3006,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-计划物流工程师",
     "category": "供应链",
-    "city": "·沧州",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-04",
@@ -3019,7 +3019,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-HRBP",
     "category": "职能",
-    "city": "·沧州",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-11",
@@ -3032,7 +3032,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-IT系统工程师",
     "category": "开发",
-    "city": "·沧州",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-20",
@@ -3044,8 +3044,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-项目管理工程师-基地",
-    "category": "项目管理",
-    "city": "·沧州",
+    "category": "职能",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-17",
@@ -3057,8 +3057,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-工业工程师",
-    "category": "开发",
-    "city": "·沧州",
+    "category": "机械结构",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-10",
@@ -3070,8 +3070,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-厂务设施工程师",
-    "category": "其他",
-    "city": "·沧州",
+    "category": "机械结构",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-17",
@@ -3084,7 +3084,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-IT研发信息化领域工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-23",
@@ -3097,7 +3097,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-IT质量领域工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-17",
@@ -3110,7 +3110,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-ITHR信息化领域工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-03",
@@ -3136,7 +3136,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-ITAI工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-08",
@@ -3149,7 +3149,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-IT营销化信息化领域工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-17",
@@ -3162,7 +3162,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-IT智造工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-28",
@@ -3188,7 +3188,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-IT基础设施领域工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-13",
@@ -3240,7 +3240,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "全球培训生-寿命仿真工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-11",
@@ -3265,8 +3265,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-客户质量工程师",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-06",
@@ -3278,8 +3278,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-质量管理工程师2",
-    "category": "其他",
-    "city": "·十堰",
+    "category": "机械结构",
+    "city": "湖北·十堰",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-23",
@@ -3305,7 +3305,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "全球培训生-电芯研发工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-24",
@@ -3369,8 +3369,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-质量管理工程师1",
-    "category": "其他",
-    "city": "·沧州",
+    "category": "机械结构",
+    "city": "河北·沧州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-08",
@@ -3408,8 +3408,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-CTS全球物流解决方案&运营工程师",
-    "category": "开发",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-02",
@@ -3434,8 +3434,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "全球培训生-客户质量工程师",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-04",
@@ -3461,7 +3461,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "培训生-宜昌财务分析专员",
     "category": "职能",
-    "city": "·宜昌",
+    "city": "湖北·宜昌",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-11",
@@ -3500,7 +3500,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "全球培训生-固态电池研发工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-31",
@@ -3525,8 +3525,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-过程质量工程师",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-27",
@@ -3552,7 +3552,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "全球培训生-储能电芯开发工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-27",
@@ -3565,7 +3565,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "全球培训生-失效机理分析工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-13",
@@ -3578,7 +3578,7 @@ const JOBS_DATA = [
     "company": "远景能源",
     "title": "全球培训生-安全可靠性工程师",
     "category": "开发",
-    "city": "无锡",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-24",
@@ -3629,8 +3629,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-CTS全球客户服务工程师",
-    "category": "开发",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-28",
@@ -3642,7 +3642,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-项目管理工程师-储能",
-    "category": "项目管理",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -3668,8 +3668,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "全球培训生-项目质量工程师1",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-24",
@@ -3681,8 +3681,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-产能规划工程师",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-18",
@@ -3694,8 +3694,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-装配工艺工程师",
-    "category": "开发",
-    "city": "·十堰",
+    "category": "机械结构",
+    "city": "湖北·十堰",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-26",
@@ -3707,8 +3707,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-智能制造工程师",
-    "category": "其他",
-    "city": "·十堰",
+    "category": "机械结构",
+    "city": "湖北·十堰",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-27",
@@ -3772,8 +3772,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-储能先期质量工程师",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-18",
@@ -3785,8 +3785,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "全球培训生-项目质量工程师2",
-    "category": "其他",
-    "city": "无锡",
+    "category": "机械结构",
+    "city": "江苏·无锡",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-15",
@@ -3798,8 +3798,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-模组&PACK段工艺工程师",
-    "category": "开发",
-    "city": "·十堰",
+    "category": "机械结构",
+    "city": "湖北·十堰",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-26",
@@ -3811,8 +3811,8 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-化成工艺工程师",
-    "category": "开发",
-    "city": "·十堰",
+    "category": "机械结构",
+    "city": "湖北·十堰",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-16",
@@ -3824,7 +3824,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-直流侧部件工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -3902,7 +3902,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-质量运营",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -3928,7 +3928,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-国际项目和机制建设",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4006,7 +4006,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "全球培训生-储能销售项目管理工程师",
-    "category": "项目管理",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4019,7 +4019,7 @@ const JOBS_DATA = [
   {
     "company": "远景能源",
     "title": "培训生-交流侧工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4097,7 +4097,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场商务",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4123,7 +4123,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "游戏测试工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4292,7 +4292,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "资产管理实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4344,7 +4344,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "测试开发工程师实习生",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4526,7 +4526,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "招聘HR实习生（美术方向）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4591,7 +4591,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化产品运营",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -4617,7 +4617,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "境外社媒与舆情分析实习生（AI技术应用方向）",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5007,7 +5007,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "美术测试工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5020,7 +5020,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "平台测试工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5033,7 +5033,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "大数据测试工程师",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5046,7 +5046,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场品牌实习生—崩坏：星穹铁道（北美）",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5059,7 +5059,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化品牌实习生（内容生态方向）-绝区零",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5072,7 +5072,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场社媒营销实习生（日本市场）",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5449,7 +5449,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场品牌-东南亚港澳台区域方向",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5462,7 +5462,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化版本运营",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5475,7 +5475,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化产品运营-UGC",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5488,7 +5488,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化发行运营",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5501,7 +5501,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化玩家运营",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5514,7 +5514,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场品牌（日）-社媒方向",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5527,7 +5527,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场内容",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5540,7 +5540,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场品牌-美洲区域方向",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5553,7 +5553,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场品牌-欧洲区域方向",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5566,7 +5566,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化市场公关",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5579,7 +5579,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化数据分析",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5592,7 +5592,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "人力资源（统招）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5605,7 +5605,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "资产管理",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5618,7 +5618,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "财务（统招）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5631,7 +5631,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "IP周边衍生品采购",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5644,7 +5644,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "内控专家",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5657,7 +5657,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "战略投资研究员（科技方向）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5670,7 +5670,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "二级投资研究员",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5683,7 +5683,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "会务接待与讲解",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5696,7 +5696,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "行政综合COE",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5709,7 +5709,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "项目管理",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5748,7 +5748,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "人力资源实习生（统招）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5774,7 +5774,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化发行运营实习生",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -5813,7 +5813,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "税务实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6034,7 +6034,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "公共事务实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6242,7 +6242,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "行政综合COE实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6281,7 +6281,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "行政实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6320,7 +6320,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "翻译助理实习生（韩语方向）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6346,7 +6346,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "人力资源实习生（BP方向）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6359,7 +6359,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "招聘HR实习生（游戏程序技术&AI）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6398,7 +6398,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "市场内容及舆情分析实习生（AI技术应用方向）",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6411,7 +6411,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "国际化发行数据分析实习生",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6424,7 +6424,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "本地化项目管理实习生",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6437,7 +6437,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "预研孵化战略研究和投资实习生（游戏向）",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6619,7 +6619,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "财务实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -6632,7 +6632,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "财务分析实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7074,7 +7074,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "游戏测试工程师实习生",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7321,7 +7321,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "游戏项目管理实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7347,7 +7347,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "AI平台运营实习生",
-    "category": "其他",
+    "category": "市场",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7386,7 +7386,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "招聘HR实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7399,7 +7399,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "HR招聘实习生",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7412,7 +7412,7 @@ const JOBS_DATA = [
   {
     "company": "米哈游",
     "title": "美术测试工程师实习生",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7633,7 +7633,7 @@ const JOBS_DATA = [
   {
     "company": "shopee",
     "title": "人力资源专员",
-    "category": "其他",
+    "category": "职能",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -7659,7 +7659,7 @@ const JOBS_DATA = [
   {
     "company": "shopee",
     "title": "项目经理(PJM)",
-    "category": "其他",
+    "category": "职能",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -8310,7 +8310,7 @@ const JOBS_DATA = [
     "company": "合合信息",
     "title": "后端工程师(AI方向)后端(J14431)",
     "category": "开发",
-    "city": "上海",
+    "city": "上海·静安区",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-01",
@@ -8635,7 +8635,7 @@ const JOBS_DATA = [
     "company": "合合信息",
     "title": "移动端开发工程师(J14382)",
     "category": "开发",
-    "city": "上海",
+    "city": "上海·静安区",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-20",
@@ -8687,7 +8687,7 @@ const JOBS_DATA = [
     "company": "合合信息",
     "title": "财务管培生(J14377)",
     "category": "职能",
-    "city": "上海",
+    "city": "上海·静安区",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-06",
@@ -8700,7 +8700,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】UX设计师",
     "category": "设计",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-02",
@@ -8713,7 +8713,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】游戏工具产品增长运营",
     "category": "运营",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-17",
@@ -8726,7 +8726,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】测试开发工程师",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-30",
@@ -8739,7 +8739,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】客户端开发-Android",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-13",
@@ -8752,7 +8752,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】客户端开发-Web",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-04",
@@ -8765,7 +8765,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】客户端开发-iOS",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-08",
@@ -8778,7 +8778,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】C++传输SDK开发工程师",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-01",
@@ -8791,7 +8791,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】数据产品经理",
     "category": "产品",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-13",
@@ -8830,7 +8830,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "产品经理（27届实习转正）",
     "category": "产品",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-29",
@@ -8843,7 +8843,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "服务器开发工程师（27届实习转正）",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-29",
@@ -8856,7 +8856,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】X-PEP产品星计划",
     "category": "产品",
-    "city": "北京",
+    "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-05",
@@ -8869,7 +8869,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "测试开发实习生",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-28",
@@ -8882,7 +8882,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "【2027校招】服务器开发工程师",
     "category": "开发",
-    "city": "北京",
+    "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-15",
@@ -8908,7 +8908,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "数据分析实习生（社交）",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-30",
@@ -8934,7 +8934,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "运维实习生（27届实习转正）",
     "category": "开发",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-29",
@@ -8973,7 +8973,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "广告设计实习生",
     "category": "运营",
-    "city": "深圳",
+    "city": "广东·深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-10",
@@ -8986,7 +8986,7 @@ const JOBS_DATA = [
     "company": "迅雷科技",
     "title": "华语公会商务实习生",
     "category": "运营",
-    "city": "武汉",
+    "city": "湖北·武汉",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-25",
@@ -9467,7 +9467,7 @@ const JOBS_DATA = [
     "company": "四方股份",
     "title": "机械研发工程师(J13848)",
     "category": "开发",
-    "city": "·湖州·吴兴区",
+    "city": "湖州·吴兴区",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-17",
@@ -9493,7 +9493,7 @@ const JOBS_DATA = [
     "company": "四方股份",
     "title": "工艺研发工程师(J13849)",
     "category": "开发",
-    "city": "·保定",
+    "city": "保定",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-22",
@@ -9571,7 +9571,7 @@ const JOBS_DATA = [
     "company": "科大讯飞",
     "title": "AI研究算法工程师-大模型训练/推理Infra方向(J13367)",
     "category": "算法",
-    "city": "北京",
+    "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-02",
@@ -9766,7 +9766,7 @@ const JOBS_DATA = [
     "company": "科大讯飞",
     "title": "AI研究算法工程师-认知大模型方向(J13383)",
     "category": "算法",
-    "city": "北京",
+    "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-09",
@@ -9831,7 +9831,7 @@ const JOBS_DATA = [
     "company": "科大讯飞",
     "title": "AI研究算法工程师-语音大模型方向(J13388)",
     "category": "算法",
-    "city": "上海",
+    "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-06",
@@ -9857,7 +9857,7 @@ const JOBS_DATA = [
     "company": "科大讯飞",
     "title": "AI研究算法工程师-自然语言处理方向(J13390)",
     "category": "算法",
-    "city": "北京",
+    "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-02",
@@ -9870,7 +9870,7 @@ const JOBS_DATA = [
     "company": "科大讯飞",
     "title": "AI研究算法工程师-智能语音方向(J13389)",
     "category": "算法",
-    "city": "上海",
+    "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-21",
@@ -10038,7 +10038,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "Agent研发工程师-Harness方向(J13347)",
-    "category": "开发",
+    "category": "算法",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10051,7 +10051,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "AI研发工程师(J13366)",
-    "category": "开发",
+    "category": "算法",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10064,7 +10064,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "大数据工程师(J13405)",
-    "category": "数据",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10208,7 +10208,7 @@ const JOBS_DATA = [
     "company": "科大讯飞",
     "title": "客户经理(J13416)",
     "category": "市场",
-    "city": "北京",
+    "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-10",
@@ -10286,7 +10286,7 @@ const JOBS_DATA = [
     "company": "科大讯飞",
     "title": "售前咨询(J13434)",
     "category": "市场",
-    "city": "北京",
+    "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-01",
@@ -10389,7 +10389,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "教育技术研究员(J13415)",
-    "category": "其他",
+    "category": "职能",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10402,7 +10402,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "课程产品经理-教育技术学方向(J13418)",
-    "category": "其他",
+    "category": "职能",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10415,7 +10415,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "AI医学研究员(J13391)",
-    "category": "其他",
+    "category": "职能",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10428,7 +10428,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "工程设计师(J13407)",
-    "category": "其他",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10441,7 +10441,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "工程深化设计师(J13408)",
-    "category": "其他",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10454,7 +10454,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "技术工程师-计算网络(J13412)",
-    "category": "其他",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10467,7 +10467,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "实施工程师(J13428)",
-    "category": "其他",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10480,7 +10480,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "交付项目经理(J13413)",
-    "category": "其他",
+    "category": "运营",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10493,7 +10493,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "项目经理-医疗方向(J13436)",
-    "category": "其他",
+    "category": "运营",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10506,7 +10506,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "AI数据工程师-基座大模型方向(J13364)",
-    "category": "其他",
+    "category": "职能",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10519,7 +10519,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "大模型数据项目经理(J13404)",
-    "category": "其他",
+    "category": "职能",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10532,7 +10532,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "语言学研究员(J13441)",
-    "category": "其他",
+    "category": "职能",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10688,7 +10688,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "AI算法测试开发工程师(J13365)",
-    "category": "测试",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10701,7 +10701,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "测试开发工程师(J13398)",
-    "category": "测试",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10714,7 +10714,7 @@ const JOBS_DATA = [
   {
     "company": "科大讯飞",
     "title": "硬件测试工程师(J13438)",
-    "category": "测试",
+    "category": "开发",
     "city": "合肥",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -10857,7 +10857,7 @@ const JOBS_DATA = [
   {
     "company": "B站（哔哩哔哩）",
     "title": "资源项目管理【2027届】",
-    "category": "项目管理",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -11169,7 +11169,7 @@ const JOBS_DATA = [
   {
     "company": "B站（哔哩哔哩）",
     "title": "助理动画导演【2027届】",
-    "category": "其他",
+    "category": "设计",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -11871,7 +11871,7 @@ const JOBS_DATA = [
   {
     "company": "淘宝闪购",
     "title": "AI商业分析师",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -11884,7 +11884,7 @@ const JOBS_DATA = [
   {
     "company": "淘宝闪购",
     "title": "风险策略运营",
-    "category": "其他",
+    "category": "职能",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -12261,7 +12261,7 @@ const JOBS_DATA = [
   {
     "company": "阿里云",
     "title": "数据分析师",
-    "category": "数据",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -14575,7 +14575,7 @@ const JOBS_DATA = [
   {
     "company": "鹰角网络",
     "title": "游戏测试",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -14627,7 +14627,7 @@ const JOBS_DATA = [
   {
     "company": "鹰角网络",
     "title": "游戏测试（实习）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -14666,7 +14666,7 @@ const JOBS_DATA = [
   {
     "company": "鹰角网络",
     "title": "游戏测试开发（实习）",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -14965,7 +14965,7 @@ const JOBS_DATA = [
   {
     "company": "鹰角网络",
     "title": "游戏测试开发",
-    "category": "其他",
+    "category": "机械结构",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15238,7 +15238,7 @@ const JOBS_DATA = [
   {
     "company": "新能安",
     "title": "电化学类",
-    "category": "其他",
+    "category": "开发",
     "city": "厦门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15251,7 +15251,7 @@ const JOBS_DATA = [
   {
     "company": "新能安",
     "title": "材料开发类",
-    "category": "开发",
+    "category": "机械结构",
     "city": "厦门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15264,7 +15264,7 @@ const JOBS_DATA = [
   {
     "company": "新能安",
     "title": "电子&电力电子类",
-    "category": "其他",
+    "category": "硬件",
     "city": "厦门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15277,7 +15277,7 @@ const JOBS_DATA = [
   {
     "company": "新能安",
     "title": "仿真&可靠性类",
-    "category": "其他",
+    "category": "开发",
     "city": "厦门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15329,7 +15329,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯音乐",
     "title": "组织与人才发展（OD）实习生",
-    "category": "其他",
+    "category": "开发",
     "city": "集团部门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15394,7 +15394,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯音乐",
     "title": "企业文化\n热门",
-    "category": "其他",
+    "category": "开发",
     "city": "集团部门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15420,7 +15420,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯音乐",
     "title": "法务实习生",
-    "category": "其他",
+    "category": "开发",
     "city": "集团部门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15446,7 +15446,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯音乐",
     "title": "行政管理",
-    "category": "其他",
+    "category": "开发",
     "city": "集团部门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15472,7 +15472,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯音乐",
     "title": "生态管理",
-    "category": "其他",
+    "category": "开发",
     "city": "集团部门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15524,7 +15524,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯音乐",
     "title": "车载音乐项目管理",
-    "category": "其他",
+    "category": "开发",
     "city": "集团部门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15589,7 +15589,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯音乐",
     "title": "内容安全策略",
-    "category": "其他",
+    "category": "开发",
     "city": "集团部门",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15615,7 +15615,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "AI研究工程师\n3D视觉&图形图像\nNLP\n机器学习\nLLM&多模态大模型",
-    "category": "其他",
+    "category": "算法",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15628,7 +15628,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏项目管理\n游戏全生命周期项目管理",
-    "category": "项目管理",
+    "category": "职能",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15654,7 +15654,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "图形开发工程师\n实时光追\n前沿技术探索\n图形引擎\n渲染\n全局光照",
-    "category": "游戏策划",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15667,7 +15667,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏技术美术工程师\n前沿技术攻坚\nAIGC\n艺术×技术跨界",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15680,7 +15680,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏角色原画设计师\n视觉风格定义\n高创作自由度\n录用双通道",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15693,7 +15693,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏场景原画设计师\n世界观构建\n多题材覆盖\n录用双通道",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15758,7 +15758,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏研发工程师（客户端/服务端）\n客户端\n服务器\nC++开发\nAI",
-    "category": "游戏策划",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15784,7 +15784,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "多模态大模型算法工程师\n多模态算法研发及优化",
-    "category": "其他",
+    "category": "算法",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15797,7 +15797,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏引擎研发工程师\n图形引擎\n前沿技术攻坚",
-    "category": "游戏策划",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15810,7 +15810,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "搜索推荐算法工程师\n广告算法\n搜索推荐",
-    "category": "其他",
+    "category": "算法",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15875,7 +15875,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "AIAgent工程师（游戏研发方向）\nAIAgent开发\n多模态\nAIGC",
-    "category": "游戏策划",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15901,7 +15901,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏技术美术工程师（PCG向）\nTA程序向\nPCG生成",
-    "category": "游戏策划",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -15914,7 +15914,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏测试工程师\n品质保障\n规范和优质的培训体系",
-    "category": "测试",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16018,7 +16018,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏音效设计师",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16122,7 +16122,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏测试开发工程师\n规范和优质的培训体系\n国内领先的游戏测试方案",
-    "category": "测试",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16148,7 +16148,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏动画设计师\n角色动画表演\n动作系统搭建\n动捕实战",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16161,7 +16161,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏特效设计师\n美术+技术引擎双修",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16174,7 +16174,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏3D角色美术设计师\n材极致质表现\n研发全流程视野",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16187,7 +16187,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "CG场景概念设计师\n镜头叙事\n电影感场景",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16200,7 +16200,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "动效设计师VX\n界面动效设计\n提升千万玩家体验",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16226,7 +16226,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏3D场景编辑设计师\n3D场景搭建\n光影氛围营造\n实时渲染前沿",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16239,7 +16239,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏视频编导\n叙事节奏把控\n影视化表达\n全流程创作",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16252,7 +16252,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "游戏视觉设计师GUI\n视觉规范搭建\n多风格成长机会",
-    "category": "游戏策划",
+    "category": "设计",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16265,7 +16265,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "推荐算法工程师\n电商推荐算法",
-    "category": "其他",
+    "category": "算法",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16304,7 +16304,7 @@ const JOBS_DATA = [
   {
     "company": "网易互娱",
     "title": "大语言模型算法工程师\n大语言模型算法优化及应用",
-    "category": "其他",
+    "category": "算法",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -16318,7 +16318,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "人力资源管理",
     "category": "职能",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-03",
@@ -16331,7 +16331,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "工业设计",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-11",
@@ -16344,7 +16344,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "结构设计",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-29",
@@ -16357,7 +16357,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "视觉系统软件开发",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-15",
@@ -16370,7 +16370,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "CAE",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-05",
@@ -16383,7 +16383,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "电子设计",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-01",
@@ -16396,7 +16396,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "控制系统软件开发",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-18",
@@ -16409,7 +16409,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "光学评测",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-25",
@@ -16422,7 +16422,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "光学开发",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-14",
@@ -16435,7 +16435,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "嵌入式软件开发",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-04",
@@ -16448,7 +16448,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "软件开发",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-04",
@@ -16461,7 +16461,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "FPGA开发",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-10",
@@ -16474,7 +16474,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "软件测试",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-05",
@@ -16487,7 +16487,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "项目管理",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-27",
@@ -16500,7 +16500,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "失效分析",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-27",
@@ -16513,7 +16513,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "设备光学研发",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-25",
@@ -16526,7 +16526,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "机器学习",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-01",
@@ -16539,7 +16539,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "结构评测",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-25",
@@ -16552,7 +16552,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "电子评测",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-19",
@@ -16565,7 +16565,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "模具设计",
     "category": "产品",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-09",
@@ -16578,7 +16578,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "工艺技术",
     "category": "开发",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-03",
@@ -16591,7 +16591,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "设备技术",
     "category": "开发",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-08",
@@ -16604,7 +16604,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "治具设计",
     "category": "开发",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-16",
@@ -16617,7 +16617,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "镀膜技术",
     "category": "开发",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-28",
@@ -16630,7 +16630,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "模具技术",
     "category": "开发",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-05",
@@ -16642,8 +16642,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "制造管理",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-26",
@@ -16655,8 +16655,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "IE技术",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-02",
@@ -16668,8 +16668,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "计划物控",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-21",
@@ -16681,8 +16681,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "质量管理",
-    "category": "其他",
-    "city": "上海",
+    "category": "机械结构",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-20",
@@ -16695,7 +16695,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "市场开发",
     "category": "市场",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-30",
@@ -16708,7 +16708,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "产品经理",
     "category": "市场",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-17",
@@ -16721,7 +16721,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "销售",
     "category": "市场",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-07",
@@ -16734,7 +16734,7 @@ const JOBS_DATA = [
     "company": "舜宇集团",
     "title": "业务支持",
     "category": "市场",
-    "city": "上海",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-30",
@@ -16746,8 +16746,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "软件应用",
-    "category": "其他",
-    "city": "上海",
+    "category": "职能",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-11",
@@ -16759,8 +16759,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "EHS管理",
-    "category": "其他",
-    "city": "上海",
+    "category": "职能",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-07",
@@ -16772,8 +16772,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "设备环境技术",
-    "category": "其他",
-    "city": "上海",
+    "category": "职能",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-26",
@@ -16785,8 +16785,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "采编",
-    "category": "其他",
-    "city": "上海",
+    "category": "职能",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-31",
@@ -16798,8 +16798,8 @@ const JOBS_DATA = [
   {
     "company": "舜宇集团",
     "title": "信息安全管理",
-    "category": "其他",
-    "city": "上海",
+    "category": "职能",
+    "city": "广东",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-29",
@@ -17201,7 +17201,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】Unity3D客户端开发工程师22-30K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17214,7 +17214,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】初级测试工程师10-14K/月",
-    "category": "测试",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17240,7 +17240,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "校招C++服务器开发工程师25-35K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17253,7 +17253,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "校招Web前端开发工程师15-25K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17266,7 +17266,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】C++客户端开发工程师22-30K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17279,7 +17279,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】引擎开发优化工程师25-35K/月",
-    "category": "游戏策划",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17292,7 +17292,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "校招DBA工程师15-25K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17305,7 +17305,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】Linux主机运维工程师12-20K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17331,7 +17331,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】AI应用开发工程师28-40K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17344,7 +17344,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】测试开发工程师20-25K/月",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17357,7 +17357,7 @@ const JOBS_DATA = [
   {
     "company": "柠檬微趣",
     "title": "【校招】游戏数据分析师20-30K/月",
-    "category": "数据",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -17982,7 +17982,7 @@ const JOBS_DATA = [
     "company": "天锐星通",
     "title": "校招-射频工程师",
     "category": "开发",
-    "city": "成都",
+    "city": "成都·高新区",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-19",
@@ -19073,7 +19073,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "软件工程师（后端方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19099,7 +19099,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "热设计工程师（热管理方向）-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19112,7 +19112,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "热设计工程师（传热方向）-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19125,7 +19125,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "前端开发工程师（Agent开发方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19151,7 +19151,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "器件开发工程师（影像方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19164,7 +19164,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "器件开发工程师（电子元器件方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19255,7 +19255,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "软件产品经理-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19268,7 +19268,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "软件工程师（Agent开发方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19281,7 +19281,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "软件测试开发工程师（影像方向）-27届秋招",
-    "category": "测试",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19294,8 +19294,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "软件测试开发工程师-27届秋招",
-    "category": "测试",
-    "city": "深圳",
+    "category": "其他",
+    "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-06",
@@ -19307,7 +19307,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "控制算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19320,7 +19320,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "空间设计师-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19346,7 +19346,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "可靠性测试工程师-27届秋招",
-    "category": "测试",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19359,7 +19359,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "结构工程师（机器人方向）-27届秋招",
-    "category": "机械结构",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19372,8 +19372,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "结构工程师-27届秋招",
-    "category": "机械结构",
-    "city": "上海",
+    "category": "其他",
+    "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-07",
@@ -19398,7 +19398,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "战略规划经理（手机产品方向）-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19424,7 +19424,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "运控算法工程师（机器人方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19437,7 +19437,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "运动健康算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19450,7 +19450,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "用户运营经理-27届秋招",
-    "category": "运营",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19477,7 +19477,7 @@ const JOBS_DATA = [
     "company": "vivo",
     "title": "用户体验工程师-27届秋招",
     "category": "其他",
-    "city": "东莞",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-24",
@@ -19489,7 +19489,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "交互设计师-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19502,7 +19502,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "硬件架构工程师-27届秋招",
-    "category": "硬件",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19515,7 +19515,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "硬件工程师（电源/电池方向）-27届秋招",
-    "category": "硬件",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19528,7 +19528,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "硬件工程师（射频方向）-27届秋招",
-    "category": "硬件",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19554,7 +19554,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "技术规划工程师（电声方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19567,8 +19567,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "互联网运营经理（应用方向）-27届秋招",
-    "category": "运营",
-    "city": "东莞",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-13",
@@ -19580,8 +19580,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "硬件工程师（基带方向）-27届秋招",
-    "category": "硬件",
-    "city": "上海",
+    "category": "其他",
+    "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-23",
@@ -19593,7 +19593,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "产品营销经理-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19606,7 +19606,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "互联网产品经理（应用方向）-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19619,7 +19619,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "硬件工程师（PCB方向）-27届秋招",
-    "category": "硬件",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19632,7 +19632,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "硬件测试项目经理-27届秋招",
-    "category": "硬件",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19645,7 +19645,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "采购经理-27届秋招",
-    "category": "供应链",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19658,7 +19658,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "影像效果测试开发工程师-27届秋招",
-    "category": "测试",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19671,7 +19671,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "安全工程师（IT方向）-27届秋招",
-    "category": "安全",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19684,8 +19684,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "安全工程师（AI技术方向）-27届秋招",
-    "category": "安全",
-    "city": "北京",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-02",
@@ -19697,7 +19697,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "安全工程师（AI 项目方向）-27届秋招",
-    "category": "安全",
+    "category": "其他",
     "city": "南京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19710,7 +19710,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "营销经理（海外业务）-27届秋招",
-    "category": "市场",
+    "category": "其他",
     "city": "阿联酋",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19723,7 +19723,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "安全工程师-27届秋招",
-    "category": "安全",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19736,7 +19736,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "互联网产品经理（系统方向）-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19749,7 +19749,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "VLA算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19762,7 +19762,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "互联网产品经理（平台方向）-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19775,7 +19775,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "VLA强化学习算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19788,8 +19788,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "应用软件工程师-27届秋招",
-    "category": "开发",
-    "city": "深圳",
+    "category": "其他",
+    "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-31",
@@ -19801,7 +19801,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "互联网产品经理（策略方向）-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19814,7 +19814,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "UI设计师（IOT方向）-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19840,7 +19840,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "UI设计师-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19905,7 +19905,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "音频算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19918,7 +19918,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "Rust工程师（嵌入式方向）-27届秋招",
-    "category": "嵌入式",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19945,7 +19945,7 @@ const JOBS_DATA = [
     "company": "vivo",
     "title": "Java工程师（Android方向）-27届秋招",
     "category": "其他",
-    "city": "深圳",
+    "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-07",
@@ -19957,7 +19957,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "音频测试开发工程师-27届秋招",
-    "category": "测试",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19970,8 +19970,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "服务运营经理-27届秋招",
-    "category": "运营",
-    "city": "重庆",
+    "category": "其他",
+    "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-14",
@@ -19983,7 +19983,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "艺术创意设计师-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -19996,7 +19996,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "信号处理算法工程师（IOT方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20009,7 +20009,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "信号处理算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20022,7 +20022,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "法务经理-27届秋招",
-    "category": "职能",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20035,8 +20035,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "芯片验证工程师-27届秋招",
-    "category": "硬件",
-    "city": "上海",
+    "category": "其他",
+    "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-05",
@@ -20061,7 +20061,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "芯片算法工程师（图形图像方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20074,7 +20074,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "IT产品经理-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20087,8 +20087,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "芯片设计工程师-27届秋招",
-    "category": "硬件",
-    "city": "上海",
+    "category": "其他",
+    "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-01",
@@ -20100,7 +20100,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "ID设计师（IOT方向）-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20113,7 +20113,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "电子测试开发工程师-27届秋招",
-    "category": "测试",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20126,7 +20126,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "显示效果测试工程师-27届秋招",
-    "category": "测试",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20139,7 +20139,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "ID设计师-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20165,7 +20165,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "电商运营经理-27届秋招",
-    "category": "运营",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20217,7 +20217,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "CMF设计师（IOT方向）-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20231,7 +20231,7 @@ const JOBS_DATA = [
     "company": "vivo",
     "title": "图像处理工程师-27届秋招",
     "category": "其他",
-    "city": "上海",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-29",
@@ -20243,7 +20243,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "CMF设计师-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20256,7 +20256,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "图像/视频算法预研工程师（影像方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20282,8 +20282,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "图像/视频算法研发工程师（影像方向）-27届秋招",
-    "category": "算法",
-    "city": "上海",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-26",
@@ -20295,8 +20295,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "C、C++工程师（嵌入式方向）-27届秋招",
-    "category": "嵌入式",
-    "city": "东莞",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-30",
@@ -20308,7 +20308,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "大数据工程师（IT方向）-27届秋招",
-    "category": "数据",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20321,7 +20321,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "通信测试开发工程师-27届秋招",
-    "category": "测试",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20334,7 +20334,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "大数据工程师-27届秋招",
-    "category": "数据",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20347,8 +20347,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "算法架构工程师（互联网方向）-27届秋招",
-    "category": "算法",
-    "city": "北京",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-19",
@@ -20373,7 +20373,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "算法架构工程师（AI方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20386,7 +20386,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "产品质量经理-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20412,7 +20412,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "算法工程师（影像测试方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20425,7 +20425,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "数据工程师（机器人方向）-27届秋招",
-    "category": "数据",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20438,7 +20438,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "数据分析经理-27届秋招",
-    "category": "数据",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20451,7 +20451,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI语音算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20464,7 +20464,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "数据分析工程师-27届秋招",
-    "category": "数据",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20490,7 +20490,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "数据产品经理-27届秋招",
-    "category": "数据",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20503,7 +20503,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI算法开发工程师（游戏方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20516,7 +20516,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "产品营销经理（海外业务）-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20529,8 +20529,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI算法工程师（互联网方向）-27届秋招",
-    "category": "算法",
-    "city": "北京",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-28",
@@ -20555,7 +20555,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "手机产品经理（拍照方向）-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20568,8 +20568,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "市场与用户研究经理-27届秋招",
-    "category": "市场",
-    "city": "东莞",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-23",
@@ -20581,7 +20581,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI算法工程师（端智能方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20607,7 +20607,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "市场与用户洞察经理（设计方向）-27届秋招",
-    "category": "设计",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20620,8 +20620,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI大模型算法工程师（应用方向）-27届秋招",
-    "category": "算法",
-    "city": "北京",
+    "category": "其他",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-02",
@@ -20633,7 +20633,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI大模型算法工程师（模型方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20646,7 +20646,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "市场口碑工程师-27届秋招",
-    "category": "市场",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20659,7 +20659,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "世界模型算法工程师-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20672,7 +20672,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI产品经理-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20698,7 +20698,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "深度学习算法工程师（互联网方向）-27届秋招",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20711,7 +20711,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI产品规划经理-27届秋招",
-    "category": "产品",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20724,7 +20724,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "Agent开发工程师（数据方向）-27届秋招",
-    "category": "数据",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20737,7 +20737,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "Agent技术工程师（知识管理方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20763,7 +20763,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "软件工程师（前端方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "南京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20789,7 +20789,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "软件工程师（机器人方向）-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20802,7 +20802,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "Agent技术工程师-27届秋招",
-    "category": "开发",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20816,7 +20816,7 @@ const JOBS_DATA = [
     "company": "vivo",
     "title": "5G/6G标准与预研工程师（核心网方向）-27届秋招",
     "category": "其他",
-    "city": "北京",
+    "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-09",
@@ -20828,7 +20828,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "VLA算法工程师-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20893,7 +20893,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI大模型算法工程师-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20906,7 +20906,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "技术规划工程师（电声方向）-27届蓝极星",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20919,7 +20919,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "全身运动控制算法工程师-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20932,7 +20932,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "系统软件架构师（AI方向）-27届蓝极星",
-    "category": "开发",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20945,8 +20945,8 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "图像/视频算法研发工程师（影像方向）-27届蓝极星",
-    "category": "算法",
-    "city": "上海",
+    "category": "其他",
+    "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-08",
@@ -20984,7 +20984,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "AI算法开发工程师（游戏方向）-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -20997,7 +20997,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "器件开发工程师（显示IC方向）-27届蓝极星",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21010,7 +21010,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "图像/视频算法预研工程师（影像方向）-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21023,7 +21023,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "Rust工程师（嵌入式方向）-27届蓝极星",
-    "category": "嵌入式",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21036,7 +21036,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "运动健康技术规划工程师-27届蓝极星",
-    "category": "开发",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21062,7 +21062,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "图像算法工程师（对焦与防抖控制）-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21088,7 +21088,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "图像算法工程师（色彩影调）-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21101,7 +21101,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "运动健康技术规划工程师（传感器）-27届蓝极星",
-    "category": "开发",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21127,7 +21127,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "产品策略经理-27届博士",
-    "category": "产品",
+    "category": "其他",
     "city": "东莞",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21140,7 +21140,7 @@ const JOBS_DATA = [
   {
     "company": "vivo",
     "title": "GNSS算法工程师（基带）-27届蓝极星",
-    "category": "算法",
+    "category": "其他",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21166,7 +21166,7 @@ const JOBS_DATA = [
   {
     "company": "群核科技",
     "title": "急【星核人才计划】-日常实习生投递链接",
-    "category": "其他",
+    "category": "算法",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21179,7 +21179,7 @@ const JOBS_DATA = [
   {
     "company": "群核科技",
     "title": "急【星核人才计划】-2027届校招生投递链接",
-    "category": "其他",
+    "category": "算法",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21634,7 +21634,7 @@ const JOBS_DATA = [
   {
     "company": "群核科技",
     "title": "Global Talents Plan 合作伙伴",
-    "category": "其他",
+    "category": "市场",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -21647,7 +21647,7 @@ const JOBS_DATA = [
   {
     "company": "群核科技",
     "title": "GTP Project Introduction",
-    "category": "其他",
+    "category": "市场",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23077,7 +23077,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—基于大模型Agent的腾讯电商广告推荐研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23090,7 +23090,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—多模态大模型与强化学习驱动的广告投放Agent",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23103,7 +23103,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—面向生成式推荐的强化学习优化技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23116,7 +23116,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—广告推荐基础大模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23129,7 +23129,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯视频-统一多模态视频生成和编辑模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23142,7 +23142,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯视频-多模态视频实时生成研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23155,7 +23155,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯视频-针对影视制作的agentic system研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23168,7 +23168,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "PCG TRS-生成式推荐模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23181,7 +23181,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "PCG大数据平台部-视频生成与编辑统一模型应用研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23194,7 +23194,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "内容服务-多模态理解与生成",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23207,7 +23207,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "内容服务-下一代大模型内容理解技术",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23220,7 +23220,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-多模态强化学习研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23233,7 +23233,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-面向专业管线的3D Mesh生成大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23246,7 +23246,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-视觉理解大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23259,7 +23259,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-原生多模态模型探索",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23272,7 +23272,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-图音视频理解技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23285,7 +23285,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-大模型数据挖掘与合成技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23298,7 +23298,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-视频生成基础模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23311,7 +23311,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-原生多模态后训练技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23324,7 +23324,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-视频后训练技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23337,7 +23337,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-视觉编码器技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23350,7 +23350,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-全模态音视频理解研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23363,7 +23363,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-全模态Agentic Model研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23376,7 +23376,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-全模态Reasoning Model研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23389,7 +23389,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-基于Verifiable Reward的多模态强化学习",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23402,7 +23402,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-User Simulator in Multimodal Interaction",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23415,7 +23415,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-多模态交互大模型的Model Merge",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23428,7 +23428,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-Auto-CoT: 任务复杂度感知的自适应思维链触发与路径控制研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23441,7 +23441,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-统一音频生成大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23454,7 +23454,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-面向多模态低精度强化学习的稳定训练架构和数值对齐系统的研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23467,7 +23467,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-面向多模态强化的全异步训推解耦系统与极致分布式架构的研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23480,7 +23480,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-视觉生成强化学习关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23493,7 +23493,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-视觉智能体强化学习关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23506,7 +23506,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "端到端AI视频图像编解码",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23519,7 +23519,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向通用机器人操作的具身多模态模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23532,7 +23532,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向长程、复杂决策问题的具身智能体的研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23545,7 +23545,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向以“人”为中心的具身交互智能体研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23558,7 +23558,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向真实物理世界的多模态大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23571,7 +23571,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于AI大模型的数据库自学习优化器方向研发和探索",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23584,7 +23584,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-新一代大模型分布式训练基础框架研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23597,7 +23597,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-大模型infra稳定性研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23610,7 +23610,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-LLM压缩算法(量化、投机采样、稀疏化)研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23623,7 +23623,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元- LLM高性能推理框架调度及高性能算子优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23636,7 +23636,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-多模态理解与生成模型高性能推理框架及算子优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23649,7 +23649,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "算力统一运行时技术的研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23662,7 +23662,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "大规模资源调度技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23675,7 +23675,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向前沿大模型的异构计算芯片架构研究与评估体系构建",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23688,7 +23688,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向前沿大模型的数据压缩技术及微架构设计研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23701,7 +23701,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI-基于多模态大语言模型的游戏Agent：感知、决策与交流一体化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23714,7 +23714,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI-Agentic AI在游戏场景的探索：感知，推理，决策",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23727,7 +23727,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-大模型评测研究及应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23740,7 +23740,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-面向原生多模态大模型的视觉推理数据构建范式研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23753,7 +23753,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-原生多模态(Any-to-Any模型)预训练及数据构建范式研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23766,7 +23766,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-GUIAgent Bench及数据构建方式研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23779,7 +23779,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-视频世界模型探索",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23792,7 +23792,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-图像及3D模态编辑数据构建范式研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23805,7 +23805,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-视频编辑和统一生成模型探索",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23818,7 +23818,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-音视频理解 Benchmark 构建",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23831,7 +23831,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-大规模音视频理解 Dataset 建设",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23844,7 +23844,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-长视频流式生成数据构建和建模方式探索",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23857,7 +23857,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-基于稀疏自编码器（SAE）的大模型训练数据挖掘与质量筛选研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23870,7 +23870,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-预训练数据效率优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23883,7 +23883,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-Mid-Train数据的高效筛选与合成研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23896,7 +23896,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-大模型预训练动力学研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23909,7 +23909,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-大规模强化学习框架性能优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23922,7 +23922,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-强化学习算法研究&强推理能力优化",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23935,7 +23935,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-强化学习生产范式研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23948,7 +23948,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-超长文学习&推理能力研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23961,7 +23961,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-Reward System研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23974,7 +23974,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-垂域认知与推理研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -23987,7 +23987,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-Agent前沿评测研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24000,7 +24000,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-复杂合成数据研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24013,7 +24013,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-前沿模型/数据评估算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24026,7 +24026,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-中小尺寸模型优化相关前沿技术探索",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24039,7 +24039,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "电脑操作智能体 (CUA) 基模研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24052,7 +24052,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信搜索-大模型AI搜索研究与落地",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24065,7 +24065,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信搜索-强化学习算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24078,7 +24078,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信搜索-生成式检索在视频/电商搜索和Query推荐中的应用落地研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24091,7 +24091,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "WXG-面向Repo-level理解的长文本架构研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24104,7 +24104,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "WXG-WeLM 大语言模型基座建设",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24117,7 +24117,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "WXG-WeLM 多模态大模型基座建设",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24130,7 +24130,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "WXG-WeLM Agentic 系统",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24143,7 +24143,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-WeLM基座大模型后训练",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24156,7 +24156,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-统一理解和生成的多模态多语言大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24169,7 +24169,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-WeLM多模态大模型Agentic RL研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24182,7 +24182,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-有价值信息主动挖掘和梳理的Agent技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24195,7 +24195,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-多模态感知大模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24208,7 +24208,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-下一代图文理解生成统一模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24221,7 +24221,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-长视频理解生成统一模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24234,7 +24234,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-电商多模态大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24247,7 +24247,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-多模态AI搜索研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24260,7 +24260,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "视频号-AI Infra超大规模训练推理系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24273,7 +24273,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信视频号-全域兴趣驱动的生成式推荐与促活系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24286,7 +24286,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信视频号-推荐模型 Scaling Up /端到端推荐系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24299,7 +24299,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "WXG-从设计到代码（可信程序自动生成）",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24312,7 +24312,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信读书-长文本处理技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24325,7 +24325,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信输入法-LLM个性化智能输入与推理系统优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24338,7 +24338,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信秒剪-基于强化学习的视频生成模型优化",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24351,7 +24351,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "WXG-微信读书-语音合成大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24364,7 +24364,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信输入法-语音识别大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24377,7 +24377,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小程序代码生成模型",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24390,7 +24390,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小程序通用智能体",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24403,7 +24403,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小店跨领域大模型生成式推荐研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24416,7 +24416,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小游戏-多模态交互式 GUI Agent 研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24429,7 +24429,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小游戏-基于游戏研发管线的Agentic Coding 研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24442,7 +24442,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信游戏-用户数据驱动的交互式内容生成研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24455,7 +24455,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信游戏-生成式推荐系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24468,7 +24468,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小程序Agent-基于大语言模型的小程序功能组件（Skill）生成式编译技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24481,7 +24481,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信搜索-搜索场景下基于大模型的多模态输入表征应用研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24494,7 +24494,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信搜索-大模型在搜索系统中的应用落地研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24507,7 +24507,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室—原生多模态后训练技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24520,7 +24520,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室—面向刷掌支付的多模态大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24533,7 +24533,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室—面向内容安全的多模态鉴伪大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24546,7 +24546,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室—多模态理解与检索研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24559,7 +24559,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室-高精3D生成技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24572,7 +24572,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云安全—LLM & Agentic AI安全护栏研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24585,7 +24585,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯地图多模态大模型融合建图研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24598,7 +24598,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—基于大模型的搜索排序技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24611,7 +24611,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—基于大模型的搜索召回技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24624,7 +24624,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—面向开放知识问答任务的生成式搜索关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24637,7 +24637,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—搜索大模型推理加速研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24650,7 +24650,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—面向开放域任务的复杂 Agent 泛化性研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24663,7 +24663,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—超长程记忆（Memory）驱动的回复个性化建模",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24676,7 +24676,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—教育多模态大模型关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24689,7 +24689,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—面向开放域信息获取与推理的大模型智能体研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24702,7 +24702,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—面向开放域任务的智能体协同进化与经验单元沉淀研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24715,7 +24715,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—大模型首token时延优化研究与工程实现（基于工程与算法双维度）",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24728,7 +24728,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯会议—语音理解大模型方向研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24741,7 +24741,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯会议—语音大模型方向研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24754,7 +24754,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝—语音生成大模型方向研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24767,7 +24767,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—基于大语言模型的边缘安全运维智能体研究与实现",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24780,7 +24780,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—多模态大模型驱动的智能媒体处理平台研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24793,7 +24793,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—音视频语音识别大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24806,7 +24806,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—边缘计算在AI推理加速方向研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24819,7 +24819,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云大数据—DataAgent-数据决策智能体关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24832,7 +24832,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云大数据-AI Native Data Infra平台关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24845,7 +24845,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云CodeBuddy—利用强化学习方法基于经验数据训练提升大模型Agent能力研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24858,7 +24858,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—面向数据库自动驾驶领域大模型的强化学习研究",
-    "category": "其他",
+    "category": "开发",
     "city": "成都",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24871,7 +24871,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—面向智能体长短期记忆的智能化数据管理系统的强化学习研究",
-    "category": "其他",
+    "category": "开发",
     "city": "成都",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24884,7 +24884,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—AI存储研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24897,7 +24897,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—统一多模态检索研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24910,7 +24910,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—适合 AI Agent 的 Infra 体系研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24923,7 +24923,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—下一代AI原生的云产品全链路交互研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24936,7 +24936,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—TurboCFS高性能存储项目",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24949,7 +24949,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—基于大模型异构分布式推理性能优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24962,7 +24962,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—多模态大模型高精度蒸馏加速研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24975,7 +24975,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—高性能RL系统设计研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -24988,7 +24988,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—海量多模态小模型的Serverless 推理技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25001,7 +25001,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—构建企业级MaaS后训练平台的技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25014,7 +25014,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—TCE 私有云AI Infra研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25027,7 +25027,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—微服务平台—AI 服务流量接入与治理基础设施研究",
-    "category": "其他",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25040,7 +25040,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—自驾/具身（时空感知类模型）场景的系统优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25053,7 +25053,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯存储-基于业务特征感知的存储智能优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25066,7 +25066,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-多模态理解与生成模型压缩算法(蒸馏、量化、投机采样、稀疏化)研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25079,7 +25079,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小微-支持方言的音频理解模型",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25092,7 +25092,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小微-支持多方言的音频生成模型",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25105,7 +25105,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "听一听-音乐生成模型",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25118,7 +25118,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小微-用户人格建模与个性化对话研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25131,7 +25131,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小微-记忆系统的构建与下游应用",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25144,7 +25144,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小微-基于微信复杂生态的Agentic后训练研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25157,7 +25157,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "企业微信-基于大语言模型的非结构化数据知识挖掘与智能体应用研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25170,7 +25170,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-可在线持续进化的智能体算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25183,7 +25183,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-Agent 长程任务评测体系构建 & 自主协作能力持续深化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25196,7 +25196,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-大模型复杂推理过程评测与过程奖励建模研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25209,7 +25209,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯会议端云协同语音大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25222,7 +25222,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信WeLM-大语言模型推理优化",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25235,7 +25235,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—面向商业化推荐平台的生成式推荐技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25248,7 +25248,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—面向研效与营销全链路的 Agentic 智能工作流构建",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25261,7 +25261,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—大规模语义理解的 agent  数据和知识问答",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25274,7 +25274,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—基于Agentic AI的自主进化广告审核专家Agent构建",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25287,7 +25287,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—优化算法在广告推荐场景的应用研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25300,7 +25300,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销 —机器学习平台技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25313,7 +25313,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—基于LLM的广告系统实验设计与衡量",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25326,7 +25326,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—面向商业化场景的统一多模态表征大模型技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25339,7 +25339,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯金融科技—基于强化学习的金融智能体自主进化研究与应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25352,7 +25352,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯金融科技—多模态 coding 生成研究与UI自动化底座优化、场景拓展与融合",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25365,7 +25365,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯金融科技—基于知识图谱和大模型的异常特征模式挖掘",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25378,7 +25378,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信视频号-视频生成基座大模型算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25391,7 +25391,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯视频-AI影视剧本改编创作研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25404,7 +25404,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-Agent 研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25417,7 +25417,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-音频生成理解统一模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25430,7 +25430,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "端到端生成式AI视频处理",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25443,7 +25443,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "Agent赋能安全攻防演练",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25456,7 +25456,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向AI集群业务的高性能网络",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25469,7 +25469,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于大语言模型的搜广推特征自动挖掘与增强研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25482,7 +25482,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "新一代AI数据缓存系统课题研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25495,7 +25495,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI-大模型强化后训练框架及Rollout加速研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25508,7 +25508,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI-语境感知与多模态指令可控语音生成研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25521,7 +25521,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-视频生成 SOTA 开源数据集",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25534,7 +25534,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯存储-面向高性能基础服务的软硬协同技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25547,7 +25547,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-混元GameMate多模态AI伙伴系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25560,7 +25560,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-高精3D几何生成大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25573,7 +25573,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态 - 视频世界模型(Video World Models)与底层系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25586,7 +25586,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-高清物理级纹理材质生成研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25599,7 +25599,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向实时交互场景的边缘推理加速平台研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25612,7 +25612,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "AI芯片AI-infra训推优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25625,7 +25625,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯混元-LLM异构卡统一推理框架、算子精度和性能调优和统一图编译优化",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25638,7 +25638,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI--多智能体协同规划与言行合理的演绎系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25651,7 +25651,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI--可控游戏视频生成技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25664,7 +25664,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-原生 VLM 预训练",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25677,7 +25677,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-模型结构设计",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25690,7 +25690,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-多模态理解预训练结构与算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25703,7 +25703,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-大模型预训练Scaling Law研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25716,7 +25716,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-AI Infra 智能研发 Benchmark 与训练任务构建",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25729,7 +25729,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-Agent评测方法与评测体系研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25742,7 +25742,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-多模态Agent评测研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25755,7 +25755,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "下一代沧海VPU芯片架构设计 - 面向视频/多模态生成及增强场景优化",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25768,7 +25768,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-多模态Creative Agents研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25781,7 +25781,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-音视频表征学习",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25794,7 +25794,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-音视频理解架构研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25807,7 +25807,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-音视频训练数据研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25820,7 +25820,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-音视频评测体系研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25833,7 +25833,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-高质3D数据管线研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25846,7 +25846,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-3D场景生成算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25859,7 +25859,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-语音生成大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25872,7 +25872,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-多模态生成加速技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25885,7 +25885,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "广告推荐大模型训练基础技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25898,7 +25898,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "广告推荐大模型推理基础技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25911,7 +25911,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于大语言模型的评测轨迹自动追踪与异常根因定位研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25924,7 +25924,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向 Agent 应用开发的易用 API 抽象与平台化建设",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25937,7 +25937,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—端到端广告推荐大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25950,7 +25950,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—商业化场景中多模态生成算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25963,7 +25963,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销一商业化广告创意Agent构建",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25976,7 +25976,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向游戏数据科学的智能分析 Agent",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -25989,7 +25989,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "群体智能",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26002,7 +26002,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "语音大模型技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26015,7 +26015,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "实时语音同传技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26028,7 +26028,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏具身智能研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26041,7 +26041,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "音色合成",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26054,7 +26054,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "数字角色表演大模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26067,7 +26067,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向交互式长视频生成的多模态世界模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26080,7 +26080,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "Motion-centric World Model",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26093,7 +26093,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "语音/对话驱动的NPC方法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26106,7 +26106,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "端到端语音大模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26119,7 +26119,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯游戏智能化决策支持研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26132,7 +26132,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯游戏通用智能体算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26145,7 +26145,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "应用研究中心ARC Lab-决策与行动模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26158,7 +26158,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "应用研究中心ARC Lab-感知与理解模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26171,7 +26171,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "应用研究中心ARC Lab-世界模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26184,7 +26184,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "多模态生成大模型关键算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26197,7 +26197,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向多模态生成的理解算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26210,7 +26210,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "光子AI-Omni 模态实时可控游戏视频生成研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26223,7 +26223,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "光子AI-Omni 模态实时可控游戏视频生成训练及推理infra研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26236,7 +26236,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "光子AI-Omni 数据引擎仿真与高保真物理渲染研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26249,7 +26249,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "下一代统一多模态生成与理解基础模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26262,7 +26262,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向多模态生成的Agent和Harness系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26275,7 +26275,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "高精特效生成",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26288,7 +26288,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向游戏制作管线的3D生成研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26301,7 +26301,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向虚拟世界的通用决策智能研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26314,7 +26314,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向超大规模 AAA 级游戏场景的 3DGS重建及游戏引擎的高性能渲染管线",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26327,7 +26327,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "视频多模态训练数据引擎设计与优化",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26340,7 +26340,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "Agentic RL技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26353,7 +26353,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "多模态大模型/AI算子智能评测体系构建与Agent自动化升级",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26366,7 +26366,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "多模态大模型数据质量框架构建与优化",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26379,7 +26379,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向游戏领域的长程VLM训练和优化",
-    "category": "其他",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26392,7 +26392,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于AI的渲染管线优化",
-    "category": "其他",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26405,7 +26405,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "光子AI-多模态大模型在游戏场景中的研究与应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26418,7 +26418,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "超大规模多模态训练系统性能优化",
-    "category": "其他",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26431,7 +26431,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "多模态强化学习训练系统构建与优化",
-    "category": "其他",
+    "category": "开发",
     "city": "杭州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26444,7 +26444,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "视频生成模型高效推理与轻量化部署",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26457,7 +26457,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向多模态生成的强化学习研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26470,7 +26470,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "光子AI-游戏智能体技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26483,7 +26483,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "魔方工作室-和人类以语言沟通的智能NPC",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26496,7 +26496,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "魔方工作室-游戏视频生成项目",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26509,7 +26509,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "光子AI-游戏场景中AI Agent的研究与应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26522,7 +26522,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "光子AI-多模态模型架构和训练方案探索",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26535,7 +26535,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室-视频全模态理解基础技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26548,7 +26548,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室-大规模原生多模态智能体研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26561,7 +26561,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室-原生多模态预训练技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26574,7 +26574,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯地图-空间语义大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26587,7 +26587,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯地图-多模态大模型时空轨迹挖掘研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26600,7 +26600,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯地图-多模态大模型融合建图研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26613,7 +26613,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝-基于多模态大模型的搜索关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26626,7 +26626,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室-原生多模态Infra技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26639,7 +26639,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信搜索-Agent研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26652,7 +26652,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "元宝-面向全网搜索的多模态文档表征技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26665,7 +26665,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云大数据-流湖一体统一增量计算引擎关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26678,7 +26678,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云大数据—DataAgent—数据决策智能体关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26691,7 +26691,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云大数据-面向多模态数据处理的实时智能计算引擎关键技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26704,7 +26704,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯金融科技—面向金融应用场景的大模型综合深度推理能力提升",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26717,7 +26717,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信搜索-多模态理解（数据/算法）研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26730,7 +26730,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信小微主动推荐 - 主动智能与持续学习 Agent 研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26743,7 +26743,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信视频号-视频号电商新模型推荐范式研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26756,7 +26756,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信 公众号-生成式推荐与推荐排序Scaling Up",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26769,7 +26769,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信 -跨平台大模型计算基础设施",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26782,7 +26782,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信视频号-加热Agent智能投放与素材生成算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26795,7 +26795,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信 视频号-加热大模型驱动的跨域推荐与商业化全链路优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26808,7 +26808,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "叙事智能",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26821,7 +26821,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "智能NPC记忆、推理与情感",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26834,7 +26834,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "WXG-高性能大规模向量检索系统",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26847,7 +26847,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "ARC Lab-感知与理解模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26860,7 +26860,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "ARC Lab-决策与行动模型",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26873,7 +26873,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-Motion动作生成大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26886,7 +26886,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-基于统一表征的3D生成理解一体化大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26899,7 +26899,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-多模态生成模型加速技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26912,7 +26912,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-视频世界模型(Video World Models)与底层系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26925,7 +26925,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-3D动画驱动大模型研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26938,7 +26938,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏资产轻量化算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26951,7 +26951,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "面向开放场景的三维重建研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26964,7 +26964,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "边缘分布式推理",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26977,7 +26977,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "AI芯片软件框架建设与优化",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -26990,7 +26990,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "TencentOS-AI agent场景高性能操作系统研发和自维护研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27003,7 +27003,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "Agent在生成内容识别、人机对抗中的应用研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27016,7 +27016,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于AI大模型的异构数据库智能语句改写方向研发与探索",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27029,7 +27029,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于LSM的分布式数据库冷热分层存储架构研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27042,7 +27042,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "分布式查询优化器技术研究与应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27055,7 +27055,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "高性能分布式kvcache加速系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27068,7 +27068,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "广告超大模型训练系统基础技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27081,7 +27081,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "广告大模型推理基础技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27094,7 +27094,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI-面向UGC游戏的Vibe Gaming Agent",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27107,7 +27107,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI-游戏数据实验科学",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27120,7 +27120,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-基于Agent的大模型数据建设范式研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27133,7 +27133,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-面向 Agentic Coding 的高质量训练数据挖掘与构建研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27146,7 +27146,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-面向大语言模型能力提升的高价值训练数据挖掘与合成",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27159,7 +27159,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-STEM学科高质量数据质检自动化和高难度题目智能分析",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27172,7 +27172,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-下一代大语言模型主要预训练数据提升空间",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27185,7 +27185,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-大语言模型数据质量优化与数据实验",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27198,7 +27198,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-预训练数据价值刻画研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27211,7 +27211,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-通用网页建模优化",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27224,7 +27224,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元基座模型-大模型能力评估分析&Reward",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27237,7 +27237,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-广告推荐模型 Scaling Up（序列和非序列统一建模方向）",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27250,7 +27250,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-面向生成式推荐的强化学习优化技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27263,7 +27263,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-面向商业化推荐平台的生成式推荐技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27276,7 +27276,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-基于大模型Agent的腾讯电商广告推荐研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27289,7 +27289,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-面向商业化场景的统一多模态表征大模型技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27302,7 +27302,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-大规模语义理解的agent 数据和知识问答",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27315,7 +27315,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯金融科技-面向金融应用场景的大模型综合深度推理能力提升",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27328,7 +27328,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-基于LLM的广告系统实验设计与衡量",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27341,7 +27341,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯金融科技-基于强化学习的金融智能体自主进化研究与应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27354,7 +27354,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信-全模态定制化视频生成模型",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27367,7 +27367,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信视频号-跨域多模态生成式推荐和推荐大模型技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27380,7 +27380,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信安全-智能体安全研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27393,7 +27393,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "优图实验室—高保真人像视频生成及应用研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27406,7 +27406,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "量子神经网络设计与性质研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27419,7 +27419,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "量子电路优化研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27432,7 +27432,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "量子计算软硬件系统实现",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27445,7 +27445,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—分布式数据库 TDSQL 数据动态自适应调度研究",
-    "category": "其他",
+    "category": "开发",
     "city": "成都",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27458,7 +27458,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—腾讯云下一代虚拟化预研项目",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27471,7 +27471,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯云—腾讯自研操作系统（Tencent OS）项目",
-    "category": "其他",
+    "category": "开发",
     "city": "成都",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27484,7 +27484,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏AI算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "成都",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27497,7 +27497,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "大模型游戏推理项目",
-    "category": "其他",
+    "category": "开发",
     "city": "成都",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27510,7 +27510,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏视频生成项目",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27523,7 +27523,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏实时多模态交互系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27536,7 +27536,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏具身智能",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27549,7 +27549,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "LLM实时推理",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27562,7 +27562,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "高品质影视级TTS",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27575,7 +27575,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "语音/对话驱动数字人",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27588,7 +27588,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于游戏的 AGI 研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27601,7 +27601,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "多模态世界模型",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27614,7 +27614,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于3dgs的下一代游戏制作与渲染研究课题背景",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27627,7 +27627,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "用于实时渲染的复杂材质的高效表示",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27640,7 +27640,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于生成式框架的游戏画质增强研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27653,7 +27653,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "复杂3D场景的多模态理解与生成",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27666,7 +27666,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "AI Agent研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27679,7 +27679,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "大语言模型推理能力研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27692,7 +27692,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "多模态模型架构和训练方案探索",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27705,7 +27705,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏智能体技术研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27718,7 +27718,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于生成式框架进行3D空间的推理与生成",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27731,7 +27731,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "结合控制信号的实时高质量可交互游戏视频生成",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27744,7 +27744,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏内容分发中的生成式推荐：语义ID、受限解码与多模态对齐",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27757,7 +27757,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "多模态大模型在游戏场景中的研究与应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27770,7 +27770,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏场景中AI Agent的研究与应用",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27783,7 +27783,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏助手智能体-多模态理解应用能力研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27796,7 +27796,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏智能NPC-文生动作大模型方法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27809,7 +27809,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "基于端到端语音大模型的游戏场景实时跨语言通信系统研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27822,7 +27822,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏氛围NPC方法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27835,7 +27835,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏玩法与测试用智能bot",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27848,7 +27848,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏智能化决策支持研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27861,7 +27861,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏数据智能分析与探索Agent",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27874,7 +27874,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元多模态-AI队友面向数字世界的Agentic应用与研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27887,7 +27887,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-Code Agent 攻防研究与沙盒构建",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27900,7 +27900,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-Code Agent 执行轨迹的评估与过程奖励研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27913,7 +27913,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-大模型后训练数据全链路智能治理研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27926,7 +27926,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-面向复杂指令与智能体场景的大模型后训练数据飞轮构建研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27939,7 +27939,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "混元-面向大模型后训练Agent能力的数据策略研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27952,7 +27952,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "游戏美术生成式AI的Infra技术-超大规模训练和推理性能优化",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27965,7 +27965,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯游戏-游戏通用智能体算法研究",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27978,7 +27978,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "医疗大模型的相关研究",
-    "category": "其他",
+    "category": "开发",
     "city": "上海",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -27991,7 +27991,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销-广告推荐系统经验驱动的自进化 AutoResearch 研究",
-    "category": "其他",
+    "category": "开发",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -28004,7 +28004,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "腾讯营销—广告推荐模型 Scaling Up（序列和非序列统一建模方向）",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -28017,7 +28017,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信安全-内容审核基模",
-    "category": "其他",
+    "category": "开发",
     "city": "广州",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -28030,7 +28030,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "微信 跨平台大模型计算基础设施",
-    "category": "其他",
+    "category": "开发",
     "city": "深圳",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -28187,7 +28187,7 @@ const JOBS_DATA = [
     "company": "腾讯",
     "title": "Financial Management and Analysis 107692",
     "category": "市场",
-    "city": "全国",
+    "city": "Alto",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-14",
@@ -28310,6 +28310,19 @@ const JOBS_DATA = [
     "deadline": "2026-08-20",
     "status": "可投",
     "link": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/WeChat---Backend-Engineer-Intern_R107928",
+    "referralCode": "BYG5MXFT3L",
+    "updateTime": "2026-08-12"
+  },
+  {
+    "company": "腾讯",
+    "title": "Tencent Cloud - Edge Platform Product Solutions Architecture Intern - Singapore 107906",
+    "category": "产品",
+    "city": "全国",
+    "salary": "详见岗位描述",
+    "education": "本科及以上",
+    "deadline": "2026-09-07",
+    "status": "可投",
+    "link": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Tencent-Cloud---Edge-Platform-Product-Solutions-Architecture-Intern---Singapore_R107906",
     "referralCode": "BYG5MXFT3L",
     "updateTime": "2026-08-12"
   },
@@ -28577,7 +28590,7 @@ const JOBS_DATA = [
     "company": "腾讯",
     "title": "BD and Strategic Analysis Intern 107804",
     "category": "市场",
-    "city": "全国",
+    "city": "Alto",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-04",
@@ -28616,7 +28629,7 @@ const JOBS_DATA = [
     "company": "腾讯",
     "title": "IT Operations Intern 107720",
     "category": "开发",
-    "city": "全国",
+    "city": "Alto",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-08-29",
@@ -28654,7 +28667,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "Product Manager Intern, Game Performance Optimization 107173",
-    "category": "其他",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -28772,7 +28785,7 @@ const JOBS_DATA = [
     "company": "腾讯",
     "title": "Hunyuan Multimodal Reinforcement Learning Research Intern 107084",
     "category": "开发",
-    "city": "全国",
+    "city": "Alto",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-29",
@@ -28785,7 +28798,7 @@ const JOBS_DATA = [
     "company": "腾讯",
     "title": "Hunyuan Multimodal Algorithm Researcher Intern(Omni-Modal)​​ 107051",
     "category": "开发",
-    "city": "全国",
+    "city": "Alto",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-09-05",
@@ -28798,7 +28811,7 @@ const JOBS_DATA = [
     "company": "腾讯",
     "title": "Hunyuan Multimodal Algorithm Researcher Intern(Omni-Modal)​​ 106650",
     "category": "开发",
-    "city": "全国",
+    "city": "Alto",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-07",
@@ -28811,7 +28824,7 @@ const JOBS_DATA = [
     "company": "腾讯",
     "title": "Multimedia development intern 107331",
     "category": "开发",
-    "city": "全国",
+    "city": "Alto",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-11-10",
@@ -28953,7 +28966,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "AI Game Production Intern 107625",
-    "category": "其他",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -28966,7 +28979,7 @@ const JOBS_DATA = [
   {
     "company": "腾讯",
     "title": "AI Product Engineer Intern — Game Development 107621",
-    "category": "其他",
+    "category": "职能",
     "city": "全国",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29279,7 +29292,7 @@ const JOBS_DATA = [
     "company": "宇石空间",
     "title": "材料工程师",
     "category": "其他",
-    "city": "北京",
+    "city": "湖南·长沙",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-05",
@@ -29291,7 +29304,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "动力系统结构设计工程师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29317,7 +29330,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "发动机燃烧装置设计师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29330,7 +29343,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "发动机阀门设计师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29343,7 +29356,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "发动机总装设计师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29369,7 +29382,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "软件工程师",
-    "category": "开发",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29382,7 +29395,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "箭上结构工程师",
-    "category": "机械结构",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29395,7 +29408,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "发动机系统设计师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29409,7 +29422,7 @@ const JOBS_DATA = [
     "company": "宇石空间",
     "title": "支持与管理中心专员",
     "category": "其他",
-    "city": "北京",
+    "city": "湖南·长沙",
     "salary": "详见岗位描述",
     "education": "本科及以上",
     "deadline": "2026-10-16",
@@ -29434,7 +29447,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "增压输送系统设计与仿真工程师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29447,7 +29460,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "发动机涡轮泵设计师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29460,7 +29473,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "发动机总装设计实习生",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29525,7 +29538,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "结构实习生",
-    "category": "机械结构",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
@@ -29564,7 +29577,7 @@ const JOBS_DATA = [
   {
     "company": "宇石空间",
     "title": "动力系统阀门与附件设计工程师",
-    "category": "设计",
+    "category": "其他",
     "city": "北京",
     "salary": "详见岗位描述",
     "education": "本科及以上",
