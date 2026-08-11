@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>27届校招岗位汇总</title>
-<script src="xlsx.full.min.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;background:#f5f7fa;color:#1a1a2e;line-height:1.6}
@@ -65,7 +64,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <body>
 <div class="header">
   <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v4.3</span></h1></div>
+    <div><h1>🎓 27届校招岗位汇总<span class="ver">v4.5</span></h1></div>
     <div style="display:flex;gap:6px;align-items:center">
       <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
       <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
@@ -90,13 +89,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
       </div>
     </div>
     <div style="margin-bottom:6px"><strong>📥 导入岗位：</strong>
-      <button onclick="document.getElementById('fileInput').click()" style="background:#4f46e5;color:#fff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;font-size:.82rem;margin-left:4px">📁 导入 Excel / CSV</button>
-      <span style="font-size:.73rem;color:#888;margin-left:6px">支持 .xlsx .xls .csv 拖拽上传</span>
+      <button onclick="document.getElementById('fileInput').click()" style="background:#4f46e5;color:#fff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;font-size:.82rem;margin-left:4px">📁 导入 CSV</button>
+      <span style="font-size:.73rem;color:#888;margin-left:6px">Excel请先另存为CSV再导入 | 支持拖拽</span>
     </div>
     <div class="up-zone" id="dropZone">
       <div style="font-size:2rem">📁</div>
       <p>拖拽 Excel 文件到这里，或点击选择文件</p>
-      <input type="file" id="fileInput" accept=".xlsx,.xls,.csv,.json,.js" style="display:none" onchange="handleFile(this.files[0])">
+      <input type="file" id="fileInput" accept=".csv,.json,.js" style="display:none" onchange="handleFile(this.files[0])">
     </div>
     <div id="importMsg" style="font-size:.78rem;color:#10b981;margin-top:4px"></div>
     <div style="margin-top:10px"><strong>📋 岗位管理：</strong>（下方表格每行有编辑/删除按钮）</div>
@@ -404,54 +403,11 @@ function handleFile(file){
   var name=file.name.toLowerCase();
   document.getElementById('importMsg').textContent='正在解析...';
   
-  // Excel files
   if(name.endsWith('.xlsx')||name.endsWith('.xls')){
-    var reader=new FileReader();
-    reader.onload=function(e){
-      try{
-        var wb=XLSX.read(new Uint8Array(e.target.result),{type:'array'});
-        var jobs=[];
-        wb.SheetNames.forEach(function(sn){
-          var ws=wb.Sheets[sn];
-          var rows=XLSX.utils.sheet_to_json(ws,{header:1});
-          if(rows.length<2)return;
-          var header=rows[0].map(function(h){return String(h||'').trim();});
-          var colMap={};
-          ['公司','岗位','类别','城市','学历','薪资','截止','链接','内推'].forEach(function(w){
-            var idx=header.findIndex(function(h){return h.indexOf(w)>=0;});
-            if(idx>=0)colMap[w]=idx;
-          });
-          if(Object.keys(colMap).length===0&&header.length>=2){colMap['公司']=0;colMap['岗位']=1;}
-          for(var i=1;i<rows.length;i++){
-            var r=rows[i];if(!r.some(function(c){return c;}))continue;
-            var company=String(r[colMap['公司']||0]||'').trim();
-            var title=String(r[colMap['岗位']||1]||'').trim();
-            if(!company||!title||company==='nan'||title==='nan')continue;
-            if(company.length>30||company.indexOf('公司')>=0&&company.indexOf('岗位')>=0)continue;
-            var cat=normCat(String(r[colMap['类别']||2]||'其他'));
-            var city=String(r[colMap['城市']||3]||'全国').trim().replace('市','').split('、')[0].slice(0,10);
-            if(city==='nan'||!city)city='全国';
-            var edu=String(r[colMap['学历']||5]||'本科及以上').trim();
-            if(edu==='nan')edu='本科及以上';
-            var sal=String(r[colMap['薪资']||4]||'详见岗位描述').trim();
-            if(sal==='nan')sal='详见岗位描述';
-            var dl=String(r[colMap['截止']||6]||'').trim();
-            if(dl==='nan'||!dl)dl=new Date(Date.now()+30*86400000).toISOString().slice(0,10);
-            var link=String(r[colMap['链接']||7]||'').trim();
-            if(link==='nan')link='';
-            var ref=String(r[colMap['内推']||8]||'').trim();
-            if(ref==='nan')ref='';
-            jobs.push({company:company,title:title,category:cat,city:city,education:edu,salary:sal,deadline:dl,link:link,referralCode:ref,updateTime:new Date().toISOString().slice(0,10)});
-          }
-        });
-        importJobs(jobs);
-      }catch(err){document.getElementById('importMsg').textContent='解析失败: '+err.message;}
-    };
-    reader.readAsArrayBuffer(file);
+    document.getElementById('importMsg').textContent='❌ 不支持直接导入Excel，请：Excel→另存为→CSV格式→再导入';
     return;
   }
   
-  // CSV/JSON files
   var reader=new FileReader();
   reader.onload=function(e){
     try{
@@ -474,7 +430,7 @@ function handleFile(file){
         }
         importJobs(arr);return;
       }
-      document.getElementById('importMsg').textContent='支持 .xlsx .xls .csv .json 格式';
+      document.getElementById('importMsg').textContent='支持 .csv .json 格式，Excel请另存为CSV';
     }catch(err){document.getElementById('importMsg').textContent='解析失败: '+err.message;}
   };
   reader.readAsText(file,'UTF-8');
