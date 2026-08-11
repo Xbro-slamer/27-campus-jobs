@@ -65,7 +65,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <body>
 <div class="header">
   <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.9</span></h1></div>
+    <div><h1>🎓 27届校招岗位汇总<span class="ver">v4.0</span></h1></div>
     <div style="display:flex;gap:6px;align-items:center">
       <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
       <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
@@ -84,6 +84,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
         <button onclick="showAddForm()" style="background:#4f46e5;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">➕ 新增岗位</button>
         <button onclick="batchUpdateDead()" style="background:#f59e0b;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">🔄 刷新状态</button>
         <button onclick="dedupData()" style="background:#ef4444;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">🧹 去重</button>
+        <button onclick="resetData()" style="background:#999;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">↩ 恢复默认</button>
         <button onclick="exportJSON()" style="background:#10b981;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">💾 导出数据</button>
         <button onclick="toggleAdmin()" style="border:none;background:none;cursor:pointer;font-size:1.2rem">✕</button>
       </div>
@@ -158,6 +159,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 var DATA = JSON.parse(JSON.stringify(JOBS_DATA));
 // Normalize existing categories
 DATA.forEach(function(j){j.category=normCat(j.category);});
+
+// Load saved data from localStorage
+(function(){
+  try{
+    var saved=localStorage.getItem('campus_data');
+    if(saved){var arr=JSON.parse(saved);if(arr.length>0)DATA=arr;}
+  }catch(e){}
+})();
+function saveData(){
+  try{localStorage.setItem('campus_data',JSON.stringify(DATA));}catch(e){}
+}
 var FILTERS = {search:'',cats:new Set(),cities:new Set(),status:new Set(),sort:'deadline',favs:new Set(),favOnly:false,view:'table',admin:false};
 try{var s=JSON.parse(localStorage.campus_v3||'{}');if(s.favs)FILTERS.favs=new Set(s.favs);if(s.favOnly)FILTERS.favOnly=s.favOnly;if(s.view)FILTERS.view=s.view;}catch(e){}
 function save(){var o={favs:[...FILTERS.favs],favOnly:FILTERS.favOnly,view:FILTERS.view};localStorage.campus_v3=JSON.stringify(o);}
@@ -334,6 +346,7 @@ function editJob(idx){showAddForm(idx);}
 function delJob(idx){
   if(!confirm('确定删除「'+DATA[idx].company+' - '+DATA[idx].title+'」？'))return;
   DATA.splice(idx,1);
+  saveData();
   refresh();
   toast('已删除');
 }
@@ -354,6 +367,7 @@ function saveJob(){
   if(!job.company||!job.title){toast('公司和岗位名必填');return;}
   if(idx>=0&&idx<DATA.length){DATA[idx]=job;toast('已更新');}
   else{DATA.unshift(job);toast('已新增');}
+  saveData();
   closeForm();
   refresh();
 }
@@ -367,6 +381,7 @@ function dedupData(){
     if(seen.has(k)){removed++;return false;}
     seen.add(k);return true;
   });
+  saveData();
   buildCatTags();buildCityTags();refresh();
   toast('去重完成：移除 '+removed+' 条重复');
 }
@@ -489,9 +504,19 @@ function importJobs(arr){
     exist.add(key(j));
     DATA.unshift(j);added++;
   });
+  saveData();
   document.getElementById('importMsg').textContent='✅ 导入 '+added+' 条，跳过 '+skipped+' 条重复';
   buildCatTags();buildCityTags();refresh();
   toast('导入完成：'+added+' 条');
+}
+
+function resetData(){
+  if(!confirm('恢复默认数据？你手动添加/编辑的内容会丢失。'))return;
+  localStorage.removeItem('campus_data');
+  DATA=JSON.parse(JSON.stringify(JOBS_DATA));
+  DATA.forEach(function(j){j.category=normCat(j.category);});
+  buildCatTags();buildCityTags();refresh();
+  toast('已恢复默认数据');
 }
 
 // ===== INIT =====
