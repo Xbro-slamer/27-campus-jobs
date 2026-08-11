@@ -65,7 +65,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <body>
 <div class="header">
   <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.7</span></h1></div>
+    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.8</span></h1></div>
     <div style="display:flex;gap:6px;align-items:center">
       <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
       <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
@@ -155,6 +155,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <script>
 // ===== DATA =====
 var DATA = JSON.parse(JSON.stringify(JOBS_DATA));
+// Normalize existing categories
+DATA.forEach(function(j){j.category=normCat(j.category);});
 var FILTERS = {search:'',cats:new Set(),cities:new Set(),status:new Set(),sort:'deadline',favs:new Set(),favOnly:false,view:'table',admin:false};
 try{var s=JSON.parse(localStorage.campus_v3||'{}');if(s.favs)FILTERS.favs=new Set(s.favs);if(s.favOnly)FILTERS.favOnly=s.favOnly;if(s.view)FILTERS.view=s.view;}catch(e){}
 function save(){var o={favs:[...FILTERS.favs],favOnly:FILTERS.favOnly,view:FILTERS.view};localStorage.campus_v3=JSON.stringify(o);}
@@ -255,6 +257,29 @@ function renderCards(jobs){
 
 function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 
+// Category normalization
+function normCat(c){
+  if(!c)return'其他';
+  var s=c.toString().toLowerCase();
+  if(s.indexOf('算法')>=0||s.indexOf('alg')>=0)return'算法';
+  if(s.indexOf('开发')>=0||s.indexOf('研发')>=0||s.indexOf('前端')>=0||s.indexOf('后端')>=0||s.indexOf('全栈')>=0||s.indexOf('软件')>=0||s.indexOf('java')>=0||s.indexOf('c++')>=0)return'开发';
+  if(s.indexOf('硬件')>=0||s.indexOf('芯片')>=0||s.indexOf('ic')>=0||s.indexOf('电路')>=0||s.indexOf('fpga')>=0)return'硬件';
+  if(s.indexOf('嵌入式')>=0)return'嵌入式';
+  if(s.indexOf('产品')>=0)return'产品';
+  if(s.indexOf('运营')>=0)return'运营';
+  if(s.indexOf('测试')>=0)return'测试';
+  if(s.indexOf('设计')>=0||s.indexOf('美术')>=0||s.indexOf('ui')>=0||s.indexOf('ux')>=0||s.indexOf('原画')>=0)return'设计';
+  if(s.indexOf('市场')>=0||s.indexOf('营销')>=0||s.indexOf('销售')>=0||s.indexOf('投放')>=0)return'市场';
+  if(s.indexOf('职能')>=0||s.indexOf('人力')>=0||s.indexOf('hr')>=0||s.indexOf('行政')>=0||s.indexOf('财务')>=0||s.indexOf('法务')>=0)return'职能';
+  if(s.indexOf('机械')>=0||s.indexOf('结构')>=0)return'机械结构';
+  if(s.indexOf('数据')>=0)return'数据';
+  if(s.indexOf('安全')>=0)return'安全';
+  if(s.indexOf('供应链')>=0||s.indexOf('采购')>=0||s.indexOf('物流')>=0)return'供应链';
+  if(s.indexOf('项目')>=0)return'项目管理';
+  if(s.indexOf('策划')>=0||s.indexOf('游戏')>=0)return'游戏策划';
+  return'其他';
+}
+
 // ===== ACTIONS =====
 function fav(k){if(FILTERS.favs.has(k))FILTERS.favs.delete(k);else FILTERS.favs.add(k);refresh();toast(FILTERS.favs.has(k)?'⭐ 已收藏':'取消收藏');}
 function toggleFav(){FILTERS.favOnly=!FILTERS.favOnly;document.getElementById('favBtn').classList.toggle('on',FILTERS.favOnly);refresh();}
@@ -316,7 +341,7 @@ function saveJob(){
   var job={
     company:document.getElementById('fCompany').value.trim(),
     title:document.getElementById('fTitle').value.trim(),
-    category:document.getElementById('fCat').value.trim()||'其他',
+    category:normCat(document.getElementById('fCat').value.trim()||'其他'),
     city:document.getElementById('fCity').value.trim()||'全国',
     education:document.getElementById('fEdu').value,
     deadline:document.getElementById('fDeadline').value,
@@ -379,8 +404,7 @@ function handleFile(file){
             var title=String(r[colMap['岗位']||1]||'').trim();
             if(!company||!title||company==='nan'||title==='nan')continue;
             if(company.length>30||company.indexOf('公司')>=0&&company.indexOf('岗位')>=0)continue;
-            var cat=String(r[colMap['类别']||2]||'其他').trim();
-            if(cat==='nan')cat='其他';
+            var cat=normCat(String(r[colMap['类别']||2]||'其他'));
             var city=String(r[colMap['城市']||3]||'全国').trim().replace('市','').split('、')[0].slice(0,10);
             if(city==='nan'||!city)city='全国';
             var edu=String(r[colMap['学历']||5]||'本科及以上').trim();
@@ -422,7 +446,7 @@ function handleFile(file){
           if(cols.length<2)continue;
           var c=(cols[0]||'').replace(/"/g,'').trim(),t=(cols[1]||'').replace(/"/g,'').trim();
           if(!c||!t)continue;
-          arr.push({company:c,title:t,category:cols[2]||'其他',city:cols[3]||'全国',education:cols[4]||'本科及以上',deadline:cols[5]||new Date(Date.now()+30*86400000).toISOString().slice(0,10),link:cols[7]||'',referralCode:cols[8]||'',salary:'详见岗位描述',updateTime:new Date().toISOString().slice(0,10)});
+          arr.push({company:c,title:t,category:normCat(cols[2]||''),city:cols[3]||'全国',education:cols[4]||'本科及以上',deadline:cols[5]||new Date(Date.now()+30*86400000).toISOString().slice(0,10),link:cols[7]||'',referralCode:cols[8]||'',salary:'详见岗位描述',updateTime:new Date().toISOString().slice(0,10)});
         }
         importJobs(arr);return;
       }
