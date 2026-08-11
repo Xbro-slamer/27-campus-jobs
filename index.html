@@ -65,7 +65,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <body>
 <div class="header">
   <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.8</span></h1></div>
+    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.9</span></h1></div>
     <div style="display:flex;gap:6px;align-items:center">
       <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
       <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
@@ -82,7 +82,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
       <h3>⚙️ 后台管理</h3>
       <div style="display:flex;gap:6px">
         <button onclick="showAddForm()" style="background:#4f46e5;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">➕ 新增岗位</button>
-        <button onclick="batchUpdateDead()" style="background:#f59e0b;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">🔄 刷新截止状态</button>
+        <button onclick="batchUpdateDead()" style="background:#f59e0b;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">🔄 刷新状态</button>
+        <button onclick="dedupData()" style="background:#ef4444;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">🧹 去重</button>
         <button onclick="exportJSON()" style="background:#10b981;color:#fff;border:none;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.78rem">💾 导出数据</button>
         <button onclick="toggleAdmin()" style="border:none;background:none;cursor:pointer;font-size:1.2rem">✕</button>
       </div>
@@ -356,10 +357,18 @@ function saveJob(){
   closeForm();
   refresh();
 }
-function batchUpdateDead(){
-  var c=0,n=new Date();n.setHours(0,0,0,0);
-  DATA.forEach(function(j){var d=new Date(j.deadline);d.setHours(0,0,0,0);if(d<n)c++;});
-  toast('检测完成：'+c+' 条已过期（状态实时显示）');
+function dedupData(){
+  var seen=new Set();var removed=0;
+  DATA=DATA.filter(function(j){
+    // Normalize company name for dedup (remove spaces, common suffixes)
+    var c=j.company.replace(/\s+/g,'').replace(/(科技|技术|集团|有限|公司|股份|有限|责任)+$/g,'');
+    var t=j.title.replace(/\s+/g,'');
+    var k=c+'|'+t;
+    if(seen.has(k)){removed++;return false;}
+    seen.add(k);return true;
+  });
+  buildCatTags();buildCityTags();refresh();
+  toast('去重完成：移除 '+removed+' 条重复');
 }
 function exportJSON(){
   var js='const JOBS_DATA = '+JSON.stringify(DATA,null,2)+';\n';
@@ -468,12 +477,16 @@ function parseCSVLine(line){
 }
 
 function importJobs(arr){
-  var exist=new Set(DATA.map(function(j){return j.company+'|'+j.title;}));
+  // Build key set with normalization
+  function key(j){var c=j.company.replace(/\s+/g,'').replace(/(科技|技术|集团|有限|公司|股份|有限|责任)+$/g,'');var t=j.title.replace(/\s+/g,'');return c+'|'+t;}
+  var exist=new Set(DATA.map(key));
   var added=0,skipped=0;
   arr.forEach(function(j){
     if(!j.company||!j.title)return;
     if(!j.deadline)j.deadline=new Date(Date.now()+30*86400000).toISOString().slice(0,10);
-    if(exist.has(j.company+'|'+j.title)){skipped++;return;}
+    j.category=normCat(j.category);
+    if(exist.has(key(j))){skipped++;return;}
+    exist.add(key(j));
     DATA.unshift(j);added++;
   });
   document.getElementById('importMsg').textContent='✅ 导入 '+added+' 条，跳过 '+skipped+' 条重复';
