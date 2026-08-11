@@ -64,7 +64,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <body>
 <div class="header">
   <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.5</span></h1></div>
+    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.6</span></h1></div>
     <div style="display:flex;gap:6px;align-items:center">
       <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
       <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
@@ -86,14 +86,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
         <button onclick="toggleAdmin()" style="border:none;background:none;cursor:pointer;font-size:1.2rem">✕</button>
       </div>
     </div>
-    <div style="margin-bottom:10px"><strong>📥 导入岗位：</strong>
-      <button onclick="document.getElementById('fileInput').click()" style="background:#4f46e5;color:#fff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;font-size:.82rem;margin-left:8px">📁 导入 Excel / CSV</button>
-      <span style="font-size:.75rem;color:#888;margin-left:8px">也支持拖拽文件到下方区域</span>
+    <div style="margin-bottom:6px"><strong>📥 导入岗位：</strong>
+      <button onclick="document.getElementById('fileInput').click()" style="background:#4f46e5;color:#fff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;font-size:.82rem;margin-left:4px">📁 CSV / JSON</button>
+      <span style="font-size:.73rem;color:#888;margin-left:6px">💡 Excel文件请先<a href="#" onclick="alert('打开Excel → 文件 → 另存为 → 选择CSV格式 → 保存 → 再点导入按钮')" style="color:#4f46e5">另存为CSV</a>再导入 | 也支持拖拽</span>
     </div>
     <div class="up-zone" id="dropZone">
       <div style="font-size:2rem">📁</div>
       <p>拖拽 Excel 文件到这里，或点击选择文件</p>
-      <input type="file" id="fileInput" accept=".xlsx,.xls,.csv" style="display:none" onchange="handleFile(this.files[0])">
+      <input type="file" id="fileInput" accept=".csv,.json,.js" style="display:none" onchange="handleFile(this.files[0])">
     </div>
     <div id="importMsg" style="font-size:.78rem;color:#10b981;margin-top:4px"></div>
     <div style="margin-top:10px"><strong>📋 岗位管理：</strong>（下方表格每行有编辑/删除按钮）</div>
@@ -343,64 +343,6 @@ function exportJSON(){
 }
 
 // ===== IMPORT =====
-// 按需加载 SheetJS
-function loadXLSX(cb){
-  if(typeof XLSX!=='undefined'){cb();return;}
-  var s=document.createElement('script');
-  s.src='https://cdn.jsdelivr.net/npm/xlsx@0.20.2/dist/xlsx.full.min.js';
-  s.onload=cb;
-  s.onerror=function(){
-    var s2=document.createElement('script');
-    s2.src='https://unpkg.com/xlsx@0.20.2/dist/xlsx.full.min.js';
-    s2.onload=cb;
-    s2.onerror=function(){document.getElementById('importMsg').textContent='❌ 网络不通，请用CSV格式导入';};
-    document.head.appendChild(s2);
-  };
-  document.head.appendChild(s);
-  // 5秒超时
-  setTimeout(function(){if(typeof XLSX==='undefined'){document.getElementById('importMsg').textContent='⏱ 加载超时，请用CSV格式';}},5000);
-}
-function parseExcel(file){
-  var reader=new FileReader();
-  reader.onload=function(e){
-    try{
-      var wb=XLSX.read(new Uint8Array(e.target.result),{type:'array'});
-      var ws=wb.Sheets[wb.SheetNames[0]];
-      var rows=XLSX.utils.sheet_to_json(ws,{header:1});
-      if(rows.length<2){document.getElementById('importMsg').textContent='文件为空或格式不正确';return;}
-      var header=rows[0].map(function(h){return String(h||'').trim();});
-      var colMap={};
-      ['公司','岗位','类别','城市','学历','薪资','截止','链接','内推'].forEach(function(w){
-        var idx=header.findIndex(function(h){return h.indexOf(w)>=0;});
-        if(idx>=0)colMap[w]=idx;
-      });
-      if(!colMap['公司']&&header.length>=1)colMap['公司']=0;
-      if(!colMap['岗位']&&header.length>=2)colMap['岗位']=1;
-      if(!colMap['类别']&&header.length>=3)colMap['类别']=2;
-      if(!colMap['城市']&&header.length>=4)colMap['城市']=3;
-      var arr=[];
-      for(var i=1;i<rows.length;i++){
-        var r=rows[i];if(!r.some(function(c){return c;}))continue;
-        var company=String(r[colMap['公司']]||'').trim();
-        if(!company)continue;
-        arr.push({
-          company:company,title:String(r[colMap['岗位']||1]||'').trim(),
-          category:String(r[colMap['类别']||2]||'其他').trim()||'其他',
-          city:String(r[colMap['城市']||3]||'全国').trim()||'全国',
-          education:String(r[colMap['学历']||5]||'本科及以上').trim()||'本科及以上',
-          salary:String(r[colMap['薪资']||4]||'详见岗位描述').trim()||'详见岗位描述',
-          deadline:String(r[colMap['截止']||6]||'').trim()||new Date(Date.now()+30*86400000).toISOString().slice(0,10),
-          link:String(r[colMap['链接']||7]||'').trim(),
-          referralCode:String(r[colMap['内推']||8]||'').trim(),
-          updateTime:new Date().toISOString().slice(0,10)
-        });
-      }
-      importJobs(arr);
-    }catch(err){document.getElementById('importMsg').textContent='解析失败: '+err.message;}
-  };
-  reader.readAsArrayBuffer(file);
-}
-
 document.getElementById('dropZone').onclick=function(){document.getElementById('fileInput').click();};
 document.getElementById('dropZone').ondragover=function(e){e.preventDefault();this.style.background='#f0f0ff';};
 document.getElementById('dropZone').ondragleave=function(){this.style.background='';};
@@ -412,37 +354,43 @@ function handleFile(file){
   var name=file.name.toLowerCase();
   document.getElementById('importMsg').textContent='正在解析...';
   
-  // Excel files - load XLSX on demand
-  if(name.endsWith('.xlsx')||name.endsWith('.xls')){
-    document.getElementById('importMsg').textContent='⏳ 加载解析库...';
-    loadXLSX(function(){
-      if(typeof XLSX==='undefined'){document.getElementById('importMsg').textContent='❌ 加载失败，请用CSV格式（Excel另存为CSV）';return;}
-      parseExcel(file);
-    });
-    return;
-  }
-  
-  // CSV/JSON/JS files
   var reader=new FileReader();
   reader.onload=function(e){
     try{
       var text=e.target.result;
+      
+      // JSON / JS files
       if(name.endsWith('.json')||name.endsWith('.js')){
         var start=text.indexOf('[');var end=text.lastIndexOf(']')+1;
         if(start>=0&&end>start){var arr=JSON.parse(text.substring(start,end));importJobs(arr);return;}
+        document.getElementById('importMsg').textContent='JSON格式不正确';
+        return;
       }
+      
+      // CSV files
       if(name.endsWith('.csv')){
         var lines=text.split('\n').filter(function(l){return l.trim();});
-        if(lines.length<2){document.getElementById('importMsg').textContent='CSV格式不正确';return;}
+        if(lines.length<2){document.getElementById('importMsg').textContent='CSV格式不正确（至少需要表头+1行数据）';return;}
         var arr=[];
         for(var i=1;i<lines.length;i++){
           var cols=parseCSVLine(lines[i]);
           if(cols.length<2)continue;
-          arr.push({company:(cols[0]||'').replace(/"/g,''),title:(cols[1]||'').replace(/"/g,''),category:cols[2]||'其他',city:cols[3]||'全国',education:cols[4]||'本科及以上',deadline:cols[5]||new Date(Date.now()+30*86400000).toISOString().slice(0,10),link:cols[7]||'',referralCode:cols[8]||'',salary:'详见岗位描述',updateTime:new Date().toISOString().slice(0,10)});
+          var company=(cols[0]||'').replace(/"/g,'').trim();
+          var title=(cols[1]||'').replace(/"/g,'').trim();
+          if(!company||!title)continue;
+          arr.push({
+            company:company,title:title,
+            category:cols[2]||'其他',city:cols[3]||'全国',
+            education:cols[4]||'本科及以上',
+            deadline:cols[5]||new Date(Date.now()+30*86400000).toISOString().slice(0,10),
+            link:cols[7]||'',referralCode:cols[8]||'',
+            salary:'详见岗位描述',updateTime:new Date().toISOString().slice(0,10)
+          });
         }
         importJobs(arr);return;
       }
-      document.getElementById('importMsg').textContent='支持 .xlsx / .xls / .csv 格式';
+      
+      document.getElementById('importMsg').textContent='支持 CSV / JSON 格式。Excel请先另存为CSV';
     }catch(err){document.getElementById('importMsg').textContent='解析失败: '+err.message;}
   };
   reader.readAsText(file,'UTF-8');
