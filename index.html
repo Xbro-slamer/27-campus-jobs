@@ -4,7 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>27届校招岗位汇总</title>
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.20.2/dist/xlsx.full.min.js"></script>
+<script>
+// 异步加载 SheetJS，不阻塞页面
+(function(){
+  var s=document.createElement('script');
+  s.src='https://cdn.jsdelivr.net/npm/xlsx@0.20.2/dist/xlsx.full.min.js';
+  s.onerror=function(){
+    // jsdelivr 失败，尝试 unpkg
+    var s2=document.createElement('script');
+    s2.src='https://unpkg.com/xlsx@0.20.2/dist/xlsx.full.min.js';
+    s2.onerror=function(){console.warn('XLSX load failed, Excel import disabled');};
+    document.head.appendChild(s2);
+  };
+  document.head.appendChild(s);
+})();
+</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;background:#f5f7fa;color:#1a1a2e;line-height:1.6}
@@ -65,7 +79,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <body>
 <div class="header">
   <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.0</span></h1></div>
+    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.2</span></h1></div>
     <div style="display:flex;gap:6px;align-items:center">
       <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
       <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
@@ -353,7 +367,7 @@ function handleFile(file){
   
   // Excel files (.xlsx/.xls) - use SheetJS
   if(name.endsWith('.xlsx')||name.endsWith('.xls')){
-    if(typeof XLSX==='undefined'){document.getElementById('importMsg').textContent='❌ Excel解析库未加载，请刷新页面重试，或使用CSV格式';return;}
+    if(typeof XLSX==='undefined'){document.getElementById('importMsg').textContent='⏳ Excel解析库加载中，请稍后再试（如持续失败请用CSV格式）';return;}
     var reader=new FileReader();
     reader.onload=function(e){
       try{
