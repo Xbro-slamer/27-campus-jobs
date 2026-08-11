@@ -4,21 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>27届校招岗位汇总</title>
-<script>
-// 异步加载 SheetJS，不阻塞页面
-(function(){
-  var s=document.createElement('script');
-  s.src='https://cdn.jsdelivr.net/npm/xlsx@0.20.2/dist/xlsx.full.min.js';
-  s.onerror=function(){
-    // jsdelivr 失败，尝试 unpkg
-    var s2=document.createElement('script');
-    s2.src='https://unpkg.com/xlsx@0.20.2/dist/xlsx.full.min.js';
-    s2.onerror=function(){console.warn('XLSX load failed, Excel import disabled');};
-    document.head.appendChild(s2);
-  };
-  document.head.appendChild(s);
-})();
-</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;background:#f5f7fa;color:#1a1a2e;line-height:1.6}
@@ -79,7 +64,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 <body>
 <div class="header">
   <div class="c container">
-    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.2</span></h1></div>
+    <div><h1>🎓 27届校招岗位汇总<span class="ver">v3.3</span></h1></div>
     <div style="display:flex;gap:6px;align-items:center">
       <button onclick="toggleView()" id="viewBtn" style="font-size:.78rem;padding:5px 12px;border:1px solid #e2e8f0;border-radius:20px;background:#fff;cursor:pointer">🃏 卡片</button>
       <button onclick="toggleAdmin()" style="font-size:.78rem;padding:5px 12px;border:1px solid #4f46e5;border-radius:20px;background:#4f46e5;color:#fff;cursor:pointer">⚙️ 管理</button>
@@ -354,6 +339,64 @@ function exportJSON(){
 }
 
 // ===== IMPORT =====
+// 按需加载 SheetJS
+function loadXLSX(cb){
+  if(typeof XLSX!=='undefined'){cb();return;}
+  var s=document.createElement('script');
+  s.src='https://cdn.jsdelivr.net/npm/xlsx@0.20.2/dist/xlsx.full.min.js';
+  s.onload=cb;
+  s.onerror=function(){
+    var s2=document.createElement('script');
+    s2.src='https://unpkg.com/xlsx@0.20.2/dist/xlsx.full.min.js';
+    s2.onload=cb;
+    s2.onerror=function(){document.getElementById('importMsg').textContent='❌ 网络不通，请用CSV格式导入';};
+    document.head.appendChild(s2);
+  };
+  document.head.appendChild(s);
+  // 5秒超时
+  setTimeout(function(){if(typeof XLSX==='undefined'){document.getElementById('importMsg').textContent='⏱ 加载超时，请用CSV格式';}},5000);
+}
+function parseExcel(file){
+  var reader=new FileReader();
+  reader.onload=function(e){
+    try{
+      var wb=XLSX.read(new Uint8Array(e.target.result),{type:'array'});
+      var ws=wb.Sheets[wb.SheetNames[0]];
+      var rows=XLSX.utils.sheet_to_json(ws,{header:1});
+      if(rows.length<2){document.getElementById('importMsg').textContent='文件为空或格式不正确';return;}
+      var header=rows[0].map(function(h){return String(h||'').trim();});
+      var colMap={};
+      ['公司','岗位','类别','城市','学历','薪资','截止','链接','内推'].forEach(function(w){
+        var idx=header.findIndex(function(h){return h.indexOf(w)>=0;});
+        if(idx>=0)colMap[w]=idx;
+      });
+      if(!colMap['公司']&&header.length>=1)colMap['公司']=0;
+      if(!colMap['岗位']&&header.length>=2)colMap['岗位']=1;
+      if(!colMap['类别']&&header.length>=3)colMap['类别']=2;
+      if(!colMap['城市']&&header.length>=4)colMap['城市']=3;
+      var arr=[];
+      for(var i=1;i<rows.length;i++){
+        var r=rows[i];if(!r.some(function(c){return c;}))continue;
+        var company=String(r[colMap['公司']]||'').trim();
+        if(!company)continue;
+        arr.push({
+          company:company,title:String(r[colMap['岗位']||1]||'').trim(),
+          category:String(r[colMap['类别']||2]||'其他').trim()||'其他',
+          city:String(r[colMap['城市']||3]||'全国').trim()||'全国',
+          education:String(r[colMap['学历']||5]||'本科及以上').trim()||'本科及以上',
+          salary:String(r[colMap['薪资']||4]||'详见岗位描述').trim()||'详见岗位描述',
+          deadline:String(r[colMap['截止']||6]||'').trim()||new Date(Date.now()+30*86400000).toISOString().slice(0,10),
+          link:String(r[colMap['链接']||7]||'').trim(),
+          referralCode:String(r[colMap['内推']||8]||'').trim(),
+          updateTime:new Date().toISOString().slice(0,10)
+        });
+      }
+      importJobs(arr);
+    }catch(err){document.getElementById('importMsg').textContent='解析失败: '+err.message;}
+  };
+  reader.readAsArrayBuffer(file);
+}
+
 document.getElementById('dropZone').onclick=function(){document.getElementById('fileInput').click();};
 document.getElementById('dropZone').ondragover=function(e){e.preventDefault();this.style.background='#f0f0ff';};
 document.getElementById('dropZone').ondragleave=function(){this.style.background='';};
@@ -365,49 +408,13 @@ function handleFile(file){
   var name=file.name.toLowerCase();
   document.getElementById('importMsg').textContent='正在解析...';
   
-  // Excel files (.xlsx/.xls) - use SheetJS
+  // Excel files - load XLSX on demand
   if(name.endsWith('.xlsx')||name.endsWith('.xls')){
-    if(typeof XLSX==='undefined'){document.getElementById('importMsg').textContent='⏳ Excel解析库加载中，请稍后再试（如持续失败请用CSV格式）';return;}
-    var reader=new FileReader();
-    reader.onload=function(e){
-      try{
-        var wb=XLSX.read(new Uint8Array(e.target.result),{type:'array'});
-        var ws=wb.Sheets[wb.SheetNames[0]];
-        var rows=XLSX.utils.sheet_to_json(ws,{header:1});
-        if(rows.length<2){document.getElementById('importMsg').textContent='文件为空或格式不正确';return;}
-        var header=rows[0].map(function(h){return String(h||'').trim();});
-        // Auto-detect columns
-        var colMap={};
-        ['公司','岗位','类别','城市','学历','薪资','截止','链接','内推'].forEach(function(w){
-          var idx=header.findIndex(function(h){return h.indexOf(w)>=0;});
-          if(idx>=0)colMap[w]=idx;
-        });
-        if(!colMap['公司']&&header.length>=1)colMap['公司']=0;
-        if(!colMap['岗位']&&header.length>=2)colMap['岗位']=1;
-        if(!colMap['类别']&&header.length>=3)colMap['类别']=2;
-        if(!colMap['城市']&&header.length>=4)colMap['城市']=3;
-        var arr=[];
-        for(var i=1;i<rows.length;i++){
-          var r=rows[i];if(!r.some(function(c){return c;}))continue;
-          var company=String(r[colMap['公司']]||'').trim();
-          if(!company)continue;
-          arr.push({
-            company:company,
-            title:String(r[colMap['岗位']||1]||'').trim(),
-            category:String(r[colMap['类别']||2]||'其他').trim()||'其他',
-            city:String(r[colMap['城市']||3]||'全国').trim()||'全国',
-            education:String(r[colMap['学历']||5]||'本科及以上').trim()||'本科及以上',
-            salary:String(r[colMap['薪资']||4]||'详见岗位描述').trim()||'详见岗位描述',
-            deadline:String(r[colMap['截止']||6]||'').trim()||new Date(Date.now()+30*86400000).toISOString().slice(0,10),
-            link:String(r[colMap['链接']||7]||'').trim(),
-            referralCode:String(r[colMap['内推']||8]||'').trim(),
-            updateTime:new Date().toISOString().slice(0,10)
-          });
-        }
-        importJobs(arr);
-      }catch(err){document.getElementById('importMsg').textContent='解析失败: '+err.message;}
-    };
-    reader.readAsArrayBuffer(file);
+    document.getElementById('importMsg').textContent='⏳ 加载解析库...';
+    loadXLSX(function(){
+      if(typeof XLSX==='undefined'){document.getElementById('importMsg').textContent='❌ 加载失败，请用CSV格式（Excel另存为CSV）';return;}
+      parseExcel(file);
+    });
     return;
   }
   
