@@ -126,7 +126,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
   <div class="empty" id="empty" style="display:none">🔍 没有匹配的岗位</div>
 </div>
 
-<div class="footer">数据来源各企业官网 | 仅供参考 | v3.0</div>
+<div class="footer">数据来源各企业官网 | 仅供参考 | v4.4 | <a href="#" onclick="resetData()" style="color:#999">重置数据</a></div>
 
 <!-- ADD/EDIT FORM MODAL -->
 <div id="formModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;align-items:center;justify-content:center;padding:20px">
@@ -247,6 +247,7 @@ function renderTable(jobs){
     h+='<td><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+'</td>';
     h+='<td>';
     if(j.link) h+='<a href="'+esc(j.link)+'" target="_blank" class="btn-sm btn-go">📝 投递</a> ';
+    else h+='<span style="color:#999;font-size:.73rem">无链接</span> ';
     if(FILTERS.admin) h+='<button class="btn-sm" style="background:#f0f0f0;margin-left:4px" onclick="editJob('+DATA.indexOf(j)+')">✏️</button> <button class="btn-sm" style="background:#fef2f2;color:#ef4444" onclick="delJob('+DATA.indexOf(j)+')">🗑</button>';
     h+='</td></tr>';
   }
