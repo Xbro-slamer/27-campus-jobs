@@ -47,6 +47,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 .crd .cm{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:4px}
 .crd .cm span{font-size:.7rem;padding:2px 7px;background:#f5f7fa;border-radius:8px;color:#888}
 .crd .cf{display:flex;justify-content:space-between;align-items:center;padding-top:6px;border-top:1px solid #f0f0f0}
+.crd .cr{font-size:.73rem;color:#4f46e5;background:#eef2ff;padding:2px 8px;border-radius:10px;margin-top:4px;display:inline-block}
+.rc-tag{display:inline-block;font-size:.7rem;background:#fef3c7;color:#92400e;padding:1px 7px;border-radius:10px;margin-left:4px;font-weight:600}
 #loading{text-align:center;padding:100px 20px;color:#888}
 @media(max-width:768px){.cards{grid-template-columns:1fr}}
 </style>
@@ -100,7 +102,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;backg
 
     <div class="info"><span id="ri">0条</span></div>
 
-    <div class="tbl" id="tv"><table><thead><tr><th>⭐</th><th>公司</th><th>岗位</th><th>类别</th><th>城市</th><th>学历</th><th>截止</th><th>状态</th><th>操作</th></tr></thead><tbody id="tb"></tbody></table></div>
+    <div class="tbl" id="tv"><table><thead><tr><th>⭐</th><th>公司</th><th>岗位</th><th>类别</th><th>城市</th><th>学历</th><th>截止</th><th>状态</th><th>内推码</th><th>操作</th></tr></thead><tbody id="tb"></tbody></table></div>
     <div class="cards" id="cv"></div>
     <div class="empty" id="em" style="display:none">🔍 没有匹配的岗位</div>
   </div>
@@ -215,6 +217,7 @@ function rt(jobs){
     h+='<td><b>'+esc(j.company)+'</b></td><td>'+esc(j.title)+'</td><td>'+esc(j.category)+'</td><td>'+esc(j.city)+'</td><td>'+(j.education||'本科及以上')+'</td>';
     h+='<td>'+j.deadline+cd+'</td>';
     h+='<td><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+'</td>';
+    h+='<td>'+(j.referralCode?'<span class="rc-tag">🎫'+esc(j.referralCode)+'</span>':'')+'</td>';
     h+='<td>';
     if(j.link)h+='<a href="'+esc(j.link)+'" target="_blank" class="btn btn-go">📝投递</a> ';
     if(F.admin)h+='<button class="btn" style="background:#f0f0f0;margin-left:2px" onclick="editJob('+DATA.indexOf(j)+')">✏️</button> <button class="btn" style="background:#fef2f2;color:#ef4444" onclick="delJob('+DATA.indexOf(j)+')">🗑</button>';
@@ -229,7 +232,7 @@ function rc(jobs){
     var cd=d>=0?(d<=7?'⚡剩'+d+'天':'剩'+d+'天'):'';
     h+='<div class="crd"><div class="ch"><b class="cn">'+esc(j.company)+'</b><button class="btn-star" onclick="fav(\''+esc(k)+'\')">'+(F.favs.has(k)?'⭐':'☆')+'</button></div>';
     h+='<div class="ct">'+esc(j.title)+'</div><div class="cm"><span>📂'+esc(j.category)+'</span><span>📍'+esc(j.city)+'</span><span>🎓'+(j.education||'本科及以上')+'</span><span>📅'+j.deadline+' '+cd+'</span></div>';
-    h+='<div class="cf"><span><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+'</span>';
+    h+='<div class="cf"><span><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+(j.referralCode?' <span class="rc-tag">🎫'+esc(j.referralCode)+'</span>':'')+'</span>';
     if(j.link)h+='<a href="'+esc(j.link)+'" target="_blank" class="btn btn-go">📝投递</a>';
     h+='</div></div>';
   }
@@ -250,8 +253,8 @@ function toggleView(){F.view=F.view==='table'?'card':'table';refresh();}
 function resetFilters(){F.search='';F.cats.clear();F.cities.clear();F.status.clear();F.sort='deadline';F.favOnly=false;document.getElementById('srch').value='';document.getElementById('srt').value='deadline';document.getElementById('fb').classList.remove('on');document.querySelectorAll('.tag[data-v="all"]').forEach(function(t){t.classList.add('on');});document.querySelectorAll('.tag:not([data-v="all"])').forEach(function(t){t.classList.remove('on');});refresh();toast('已重置');}
 function exportCSV(){
   var jobs=filtered();
-  var csv='\uFEFF公司,岗位,类别,城市,学历,截止时间,状态,链接\n';
-  jobs.forEach(function(j){csv+='"'+j.company+'","'+j.title+'","'+j.category+'","'+j.city+'","'+(j.education||'')+'","'+j.deadline+'","'+gs(j)+'","'+(j.link||'')+'"\n';});
+  var csv='\uFEFF公司,岗位,类别,城市,学历,截止时间,状态,内推码,链接\n';
+  jobs.forEach(function(j){csv+='"'+j.company+'","'+j.title+'","'+j.category+'","'+j.city+'","'+(j.education||'')+'","'+j.deadline+'","'+gs(j)+'","'+(j.referralCode||'')+'","'+(j.link||'')+'"\n';});
   var b=new Blob([csv],{type:'text/csv;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='岗位导出.csv';a.click();toast('导出成功');
 }
 
