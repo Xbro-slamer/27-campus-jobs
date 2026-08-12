@@ -217,7 +217,7 @@ function rt(jobs){
     h+='<td><b>'+esc(j.company)+'</b></td><td>'+esc(j.title)+'</td><td>'+esc(j.category)+'</td><td>'+esc(j.city)+'</td><td>'+(j.education||'本科及以上')+'</td>';
     h+='<td>'+j.deadline+cd+'</td>';
     h+='<td><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+'</td>';
-    h+='<td>'+(j.referralCode?'<span class="rc-tag">🎫'+esc(j.referralCode)+'</span>':'')+'</td>';
+    h+='<td>'+(j.referralCode?'<span class="rc-tag">内推码：'+esc(j.referralCode)+'</span>':'')+'</td>';
     h+='<td>';
     if(j.link)h+='<a href="'+esc(j.link)+'" target="_blank" class="btn btn-go">📝投递</a> ';
     if(F.admin)h+='<button class="btn" style="background:#f0f0f0;margin-left:2px" onclick="editJob('+DATA.indexOf(j)+')">✏️</button> <button class="btn" style="background:#fef2f2;color:#ef4444" onclick="delJob('+DATA.indexOf(j)+')">🗑</button>';
@@ -232,7 +232,8 @@ function rc(jobs){
     var cd=d>=0?(d<=7?'⚡剩'+d+'天':'剩'+d+'天'):'';
     h+='<div class="crd"><div class="ch"><b class="cn">'+esc(j.company)+'</b><button class="btn-star" onclick="fav(\''+esc(k)+'\')">'+(F.favs.has(k)?'⭐':'☆')+'</button></div>';
     h+='<div class="ct">'+esc(j.title)+'</div><div class="cm"><span>📂'+esc(j.category)+'</span><span>📍'+esc(j.city)+'</span><span>🎓'+(j.education||'本科及以上')+'</span><span>📅'+j.deadline+' '+cd+'</span></div>';
-    h+='<div class="cf"><span><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+(j.referralCode?' <span class="rc-tag">🎫'+esc(j.referralCode)+'</span>':'')+'</span>';
+    h+='<div class="cf"><span><span class="dot '+(st==='可投'?'g':st==='即将截止'?'y':'r')+'"></span>'+st+'</span>';
+    if(j.referralCode)h+='<span class="rc-tag">内推码：'+esc(j.referralCode)+'</span>';
     if(j.link)h+='<a href="'+esc(j.link)+'" target="_blank" class="btn btn-go">📝投递</a>';
     h+='</div></div>';
   }
